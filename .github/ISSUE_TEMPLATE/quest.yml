@@ -1,0 +1,112 @@
+name: 📜 Post a Quest · 发布悬赏
+description: Create a new quest for the Adventurer's Guild
+title: "[QUEST] "
+labels: ["📋 Open"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## ⚔️ Post a Quest to the Guild Board
+
+        Fill out this form to post a bounty. Be clear about what you need and what you'll pay. The more specific you are, the faster a skilled adventurer will claim your quest.
+
+        填写此表单发布悬赏。描述越清晰，越能快速吸引合适的冒险家认领。
+
+  - type: input
+    id: quest-name
+    attributes:
+      label: "📜 Quest Name · 任务名称"
+      description: A clear, concise title for the quest.
+      placeholder: "e.g. Build a Telegram bot that summarizes YouTube videos"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: quest-type
+    attributes:
+      label: "🎯 Quest Type · 任务类型"
+      options:
+        - "⚔️ Code"
+        - "🎨 Design"
+        - "📜 Writing"
+        - "🔮 AI/ML"
+        - "🧪 Data"
+        - "🛡️ Strategy"
+        - "🎵 Media"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: "📝 Quest Details · 任务详情"
+      description: Describe the quest in detail. What problem needs solving? What's the context? Include links, references, or examples.
+      placeholder: |
+        ## Background
+        ...
+
+        ## What I Need
+        ...
+
+        ## Context / References
+        ...
+    validations:
+      required: true
+
+  - type: input
+    id: reward
+    attributes:
+      label: "💰 Reward (USD) · 赏金"
+      description: The total bounty amount in USD. Be fair — higher rewards attract better adventurers.
+      placeholder: "e.g. 500"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: difficulty
+    attributes:
+      label: "⭐ Difficulty · 难度"
+      options:
+        - "⭐ Novice"
+        - "⭐⭐ Adventurer"
+        - "⭐⭐⭐ Veteran"
+        - "⭐⭐⭐⭐ Master"
+        - "⭐⭐⭐⭐⭐ Legend"
+    validations:
+      required: true
+
+  - type: input
+    id: deadline
+    attributes:
+      label: "⏰ Deadline · 截止日期 (optional)"
+      description: When do you need this completed? Format: YYYY-MM-DD
+      placeholder: "e.g. 2026-06-01"
+
+  - type: textarea
+    id: skills
+    attributes:
+      label: "🛠️ Required Skills · 所需技能 (optional)"
+      description: Specific skills, tools, or experience needed.
+      placeholder: |
+        - Python, FastAPI
+        - React / Next.js
+        - Stable Diffusion / ComfyUI
+
+  - type: textarea
+    id: deliverables
+    attributes:
+      label: "📦 Deliverables · 交付物"
+      description: What exactly should the adventurer deliver? Be specific — source code, designs, report, deployed service?
+      placeholder: |
+        - [ ] GitHub repo with working code + README
+        - [ ] Deployed to Vercel/Railway
+        - [ ] 3 rounds of revision included
+    validations:
+      required: true
+
+  - type: input
+    id: contact
+    attributes:
+      label: "📬 Contact · 联系方式 (optional)"
+      description: External contact if needed (Telegram, Discord, email). You can also discuss in the issue comments.
+      placeholder: "e.g. @username on Telegram"

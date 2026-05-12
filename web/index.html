@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Adventurer's Guild · Quest Board</title>
+  <meta name="description" content="A quest board for AI-augmented workers. Post bounties, claim quests, earn gold. No middlemen. Just work that gets done.">
+  <link rel="stylesheet" href="css/guild.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏰</text></svg>">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="guild-header">
+    <div class="guild-emblem">🏰</div>
+    <h1 class="guild-title">The Adventurer's Guild</h1>
+    <p class="guild-subtitle">QUEST BOARD · 悬赏看板</p>
+    <p class="guild-tagline">"Work is a quest. Get paid like a hero."</p>
+  </header>
+
+  <!-- Stats Bar -->
+  <div class="stats-bar" id="stats-bar">
+    <div class="stat-item">📜 <span class="stat-value">—</span> Open Quests</div>
+    <div class="stat-item">⚔️ <span class="stat-value">—</span> In Progress</div>
+    <div class="stat-item">✅ <span class="stat-value">—</span> Completed</div>
+    <div class="stat-item">🏰 <span class="stat-value">—</span> Adventurers</div>
+  </div>
+
+  <!-- Filters -->
+  <div class="filters-bar" id="filters-bar">
+    <span class="filter-label">Type</span>
+    <button class="filter-btn active" data-filter="type" data-value="">All</button>
+    <button class="filter-btn" data-filter="type" data-value="⚔️ Code">⚔️ Code</button>
+    <button class="filter-btn" data-filter="type" data-value="🎨 Design">🎨 Design</button>
+    <button class="filter-btn" data-filter="type" data-value="📜 Writing">📜 Writing</button>
+    <button class="filter-btn" data-filter="type" data-value="🔮 AI/ML">🔮 AI/ML</button>
+    <button class="filter-btn" data-filter="type" data-value="🧪 Data">🧪 Data</button>
+    <button class="filter-btn" data-filter="type" data-value="🛡️ Strategy">🛡️ Strategy</button>
+    <button class="filter-btn" data-filter="type" data-value="🎵 Media">🎵 Media</button>
+
+    <span class="filter-label" style="margin-left:1rem;">Rank</span>
+    <button class="filter-btn active" data-filter="rank" data-value="">All</button>
+    <button class="filter-btn" data-filter="rank" data-value="💰 S-Rank Quest">S-Rank</button>
+    <button class="filter-btn" data-filter="rank" data-value="💰 A-Rank Quest">A-Rank</button>
+    <button class="filter-btn" data-filter="rank" data-value="💰 B-Rank Quest">B-Rank</button>
+    <button class="filter-btn" data-filter="rank" data-value="💰 C-Rank Quest">C-Rank</button>
+    <button class="filter-btn" data-filter="rank" data-value="💰 D-Rank Quest">D-Rank</button>
+
+    <span class="filter-label" style="margin-left:1rem;">Difficulty</span>
+    <button class="filter-btn active" data-filter="difficulty" data-value="">All</button>
+    <button class="filter-btn" data-filter="difficulty" data-value="⭐ Novice">Novice</button>
+    <button class="filter-btn" data-filter="difficulty" data-value="⭐⭐ Adventurer">Adventurer</button>
+    <button class="filter-btn" data-filter="difficulty" data-value="⭐⭐⭐ Veteran">Veteran</button>
+    <button class="filter-btn" data-filter="difficulty" data-value="⭐⭐⭐⭐ Master">Master</button>
+    <button class="filter-btn" data-filter="difficulty" data-value="⭐⭐⭐⭐⭐ Legend">Legend</button>
+
+    <span class="filter-label" style="margin-left:1rem;">Status</span>
+    <button class="filter-btn active" data-filter="status" data-value="">All</button>
+    <button class="filter-btn" data-filter="status" data-value="open">Open</button>
+    <button class="filter-btn" data-filter="status" data-value="claimed">Claimed</button>
+    <button class="filter-btn" data-filter="status" data-value="review">Review</button>
+    <button class="filter-btn" data-filter="status" data-value="completed">Completed</button>
+
+    <select id="sort-select" style="margin-left:auto;font-family:var(--font-display);font-size:0.75rem;padding:0.35rem 0.6rem;background:var(--bg-card);color:var(--text-primary);border:1px solid var(--border);border-radius:var(--radius);cursor:pointer;">
+      <option value="newest">Newest</option>
+      <option value="oldest">Oldest</option>
+      <option value="reward-high">Reward ↓</option>
+      <option value="reward-low">Reward ↑</option>
+    </select>
+  </div>
+
+  <!-- Content -->
+  <main class="content-area">
+
+    <!-- Quest Board -->
+    <section>
+      <h2 class="section-title">📜 Quest Board</h2>
+      <div class="quest-board" id="quest-board">
+        <div class="loading">
+          <div class="loading__spinner"></div>
+          <p style="font-family:var(--font-display);color:var(--text-secondary);letter-spacing:0.05em;">
+            Scrying the quest board...
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leaderboard -->
+    <section class="leaderboard-section">
+      <h2 class="section-title">🏅 Adventurer Leaderboard</h2>
+      <div class="leaderboard" id="leaderboard">
+        <p style="color:var(--text-muted);text-align:center;padding:2rem;">Loading adventurer ranks...</p>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta-section">
+      <a href="https://github.com/citarreikee/AGuild/issues/new?template=quest.yml" class="btn-post-quest" target="_blank" rel="noopener">
+        📜 Post a Quest · 发布悬赏
+      </a>
+      <p style="color:var(--text-muted);margin-top:1rem;font-size:0.85rem;">
+        Not a company. Not a platform. A <strong style="color:var(--gold);">guild</strong>.
+      </p>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="guild-footer">
+    <p>
+      <a href="https://github.com/citarreikee/AGuild">GitHub</a> ·
+      <a href="https://github.com/citarreikee/AGuild/blob/main/docs/quest-guide.md">Quest Guide</a> ·
+      <a href="https://github.com/citarreikee/AGuild/blob/main/docs/guild-rules.md">Guild Rules</a> ·
+      <a href="https://github.com/citarreikee/AGuild/discussions">Discussions</a>
+    </p>
+    <p style="margin-top:0.5rem;">The Adventurer's Guild · Est. 2026</p>
+  </footer>
+
+  <script src="js/issues.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
