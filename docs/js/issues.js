@@ -7,7 +7,7 @@ const GuildAPI = (() => {
   const REPO = 'AGuild';
   const BASE = `https://api.github.com/repos/${OWNER}/${REPO}`;
   const ISSUES_URL = `${BASE}/issues`;
-  const CACHE_KEY = 'guild_quest_cache';
+  const CACHE_KEY = 'guild_quest_cache_v2';
   const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
 
   // ---- Cache ----
@@ -49,14 +49,21 @@ const GuildAPI = (() => {
     const cached = getCache();
     if (cached) return cached;
 
-    // Fetch quests in parallel: open + claimed/review + recently completed
-    const [active, completed] = await Promise.all([
-      fetchAllPages(`${ISSUES_URL}?state=open&labels=📋 Open,⚡ Claimed,🔍 Review&`),
-      fetchAllPages(`${ISSUES_URL}?state=closed&labels=✅ Completed&`),
+    // Fetch all open + recently closed issues (label= AND in API, so fetch all and filter client-side)
+    const [active, closed] = await Promise.all([
+      fetchAllPages(`${ISSUES_URL}?state=open&`),
+      fetchAllPages(`${ISSUES_URL}?state=closed&`),
     ]);
 
-    // Remove pull requests (GitHub Issues API includes PRs)
-    const all = [...active, ...completed].filter(i => !i.pull_request);
+    // Filter: open quests = any guild label; closed = only completed
+    const guildLabels = ['📋 Open','⚡ Claimed','🔍 Review','✅ Completed','❌ Expired'];
+    const all = [...active, ...closed].filter(i => {
+      if (i.pull_request) return false;
+      const names = (i.labels || []).map(l => l.name);
+      if (i.state === 'open') return names.some(n => guildLabels.includes(n));
+      return names.includes('✅ Completed');
+    });
+
     setCache(all);
     return all;
   }
