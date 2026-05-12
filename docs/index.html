@@ -38,7 +38,7 @@
     <button class="filter-btn" data-filter="type" data-value="🛡️ Strategy">🛡️ Strategy</button>
     <button class="filter-btn" data-filter="type" data-value="🎵 Media">🎵 Media</button>
 
-    <span class="filter-label" style="margin-left:1rem;">Rank</span>
+    <span class="filter-label filter-label--gap">Rank</span>
     <button class="filter-btn active" data-filter="rank" data-value="">All</button>
     <button class="filter-btn" data-filter="rank" data-value="💰 S-Rank Quest">S-Rank</button>
     <button class="filter-btn" data-filter="rank" data-value="💰 A-Rank Quest">A-Rank</button>
@@ -46,7 +46,7 @@
     <button class="filter-btn" data-filter="rank" data-value="💰 C-Rank Quest">C-Rank</button>
     <button class="filter-btn" data-filter="rank" data-value="💰 D-Rank Quest">D-Rank</button>
 
-    <span class="filter-label" style="margin-left:1rem;">Difficulty</span>
+    <span class="filter-label filter-label--gap">Difficulty</span>
     <button class="filter-btn active" data-filter="difficulty" data-value="">All</button>
     <button class="filter-btn" data-filter="difficulty" data-value="⭐ Novice">Novice</button>
     <button class="filter-btn" data-filter="difficulty" data-value="⭐⭐ Adventurer">Adventurer</button>
@@ -54,14 +54,14 @@
     <button class="filter-btn" data-filter="difficulty" data-value="⭐⭐⭐⭐ Master">Master</button>
     <button class="filter-btn" data-filter="difficulty" data-value="⭐⭐⭐⭐⭐ Legend">Legend</button>
 
-    <span class="filter-label" style="margin-left:1rem;">Status</span>
+    <span class="filter-label filter-label--gap">Status</span>
     <button class="filter-btn active" data-filter="status" data-value="">All</button>
     <button class="filter-btn" data-filter="status" data-value="open">Open</button>
     <button class="filter-btn" data-filter="status" data-value="claimed">Claimed</button>
     <button class="filter-btn" data-filter="status" data-value="review">Review</button>
     <button class="filter-btn" data-filter="status" data-value="completed">Completed</button>
 
-    <select id="sort-select" style="margin-left:auto;font-family:var(--font-display);font-size:0.75rem;padding:0.35rem 0.6rem;background:var(--bg-card);color:var(--text-primary);border:1px solid var(--border);border-radius:var(--radius);cursor:pointer;">
+    <select id="sort-select">
       <option value="newest">Newest</option>
       <option value="oldest">Oldest</option>
       <option value="reward-high">Reward ↓</option>
@@ -78,9 +78,7 @@
       <div class="quest-board" id="quest-board">
         <div class="loading">
           <div class="loading__spinner"></div>
-          <p style="font-family:var(--font-display);color:var(--text-secondary);letter-spacing:0.05em;">
-            Scrying the quest board...
-          </p>
+          <p>Scrying the quest board...</p>
         </div>
       </div>
     </section>
