@@ -1,20 +1,24 @@
 <div align="center">
 
-# The Adventurer's Guild
-
 ### *"Employment is a relic. Welcome to the Guild."*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Quest Board](https://img.shields.io/badge/Quest_Board-Live-gold)](https://citarreikee.github.io/AGuild)
 [![Stars](https://img.shields.io/github/stars/citarreikee/AGuild?style=social)](https://github.com/citarreikee/AGuild/stargazers)
 
+[![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green)](https://agentskills.io)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai/code)
+[![Hermes](https://img.shields.io/badge/Hermes-Skill-orange)](https://github.com/titanwings/colleague-skill)
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-teal)](https://github.com/titanwings/colleague-skill)
+[![Codex](https://img.shields.io/badge/Codex-Skill-black)](https://github.com/titanwings/colleague-skill)
+
 <br>
 
 <table>
 <tr><td align="left">
-&nbsp;You deliver **10× the value** with AI — but your paycheck still says "employee"?<br>
+&nbsp;You deliver <b>10× the value</b> with AI — but your paycheck still says "employee"?<br>
 &nbsp;You have skills the world needs — but platforms want 30% just to connect you?<br>
-&nbsp;You believe the future of work is **quests and reputation**, not resumes and interviews?
+&nbsp;You believe the future of work is <b>quests and reputation</b>, not resumes and interviews?
 
 </td></tr>
 </table>
@@ -25,7 +29,7 @@
 
 [Quest Board](https://citarreikee.github.io/AGuild) · [Post a Quest](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) · [Discussions](https://github.com/citarreikee/AGuild/discussions)
 
-[**English**](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md)
+[<b>English</b>](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md)
 
 </div>
 
@@ -45,13 +49,23 @@ No platform fees. No middlemen. No complexity.
 
 ---
 
+## Install
+
+It's 2026 — you have an Agent. Tell it:
+
+> Install the guild skill for me: `https://github.com/citarreikee/AGuild`
+
+The Agent clones the repo into the skills directory. Once installed, type `/guild` to open the quest board.
+
+---
+
 ## Quick Start
 
 | I want to… | → |
 |------------|----|
-| **Post a quest** | [Create Quest](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
-| **Browse quests** | [Quest Board](https://citarreikee.github.io/AGuild) |
-| **Join the conversation** | [Discussions](https://github.com/citarreikee/AGuild/discussions) |
+| <b>Post a quest</b> | [Create Quest](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
+| <b>Browse quests</b> | [Quest Board](https://citarreikee.github.io/AGuild) |
+| <b>Join the conversation</b> | [Discussions](https://github.com/citarreikee/AGuild/discussions) |
 
 ---
 
@@ -67,7 +81,7 @@ The Guild does not hold funds. We're a coordination layer — not a payment plat
 
 ### The Vision
 
-> *The factory, the office, the 9-to-5 — relics of an industrial age. When one exceptional person with AI can do the work of ten, that person isn't a "freelancer." They're a **hero**. And heroes don't fill timesheets. They take quests.*
+> *The factory, the office, the 9-to-5 — relics of an industrial age. When one exceptional person with AI can do the work of ten, that person isn't a "freelancer." They're a <b>hero</b>. And heroes don't fill timesheets. They take quests.*
 
 </div>
 
@@ -75,8 +89,8 @@ The Guild does not hold funds. We're a coordination layer — not a payment plat
 
 <div align="center">
 
-**MIT License** · [citarreikee](https://github.com/citarreikee)
+<b>MIT License</b> · [citarreikee](https://github.com/citarreikee)
 
-<sub>Not a company. Not a platform. A **guild**.</sub>
+<sub>Not a company. Not a platform. A <b>guild</b>.</sub>
 
 </div>

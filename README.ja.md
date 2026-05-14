@@ -6,6 +6,12 @@
 [![Quest Board](https://img.shields.io/badge/Quest_Board-Live-gold)](https://citarreikee.github.io/AGuild)
 [![Stars](https://img.shields.io/github/stars/citarreikee/AGuild?style=social)](https://github.com/citarreikee/AGuild/stargazers)
 
+[![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green)](https://agentskills.io)
+[![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai/code)
+[![Hermes](https://img.shields.io/badge/Hermes-Skill-orange)](https://github.com/titanwings/colleague-skill)
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-teal)](https://github.com/titanwings/colleague-skill)
+[![Codex](https://img.shields.io/badge/Codex-Skill-black)](https://github.com/titanwings/colleague-skill)
+
 <br>
 
 <table>
@@ -40,6 +46,16 @@
 </table>
 
 プラットフォーム手数料なし。中間業者なし。複雑さなし。
+
+---
+
+## Install
+
+It's 2026 — you have an Agent. Tell it:
+
+> Install the guild skill for me: `https://github.com/citarreikee/AGuild`
+
+The Agent clones the repo into the skills directory. Once installed, type `/guild` to open the quest board.
 
 ---
 
