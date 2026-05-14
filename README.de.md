@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏰 Die Abenteurergilde
+# Die Abenteurergilde
 
 ### *"Anstellung ist ein Relikt. Willkommen in der Gilde."*
 
@@ -12,19 +12,18 @@
 
 <table>
 <tr><td align="left">
-
-⚔️ &nbsp;Du lieferst mit KI **10× mehr Wert** — aber auf deiner Gehaltsabrechnung steht noch "Angestellter"?<br>
-📜 &nbsp;Du hast Fähigkeiten, die die Welt braucht — aber Plattformen wollen 30% nur für die Verbindung?<br>
-🏰 &nbsp;Du glaubst, die Zukunft der Arbeit sind **Quests und Reputation**, nicht Lebensläufe und Vorstellungsgespräche?
+&nbsp;Du lieferst mit KI **10× mehr Wert** — aber auf deiner Gehaltsabrechnung steht noch "Angestellter"?<br>
+&nbsp;Du hast Fähigkeiten, die die Welt braucht — aber Plattformen wollen 30% nur für die Verbindung?<br>
+&nbsp;Du glaubst, die Zukunft der Arbeit sind **Quests und Reputation**, nicht Lebensläufe und Vorstellungsgespräche?
 
 </td></tr>
 </table>
 
-### ✨ Das ist die Antwort.
+### Das ist die Antwort.
 
 <br>
 
-[🌐 Quest-Brett](https://citarreikee.github.io/AGuild) · [📜 Quest aufgeben](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) · [💬 Diskussionen](https://github.com/citarreikee/AGuild/discussions)
+[Quest-Brett](https://citarreikee.github.io/AGuild) · [Quest aufgeben](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) · [Diskussionen](https://github.com/citarreikee/AGuild/discussions)
 
 [**English**](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md)
 
@@ -50,13 +49,13 @@ Keine Plattformgebühren. Keine Vermittler. Keine Komplexität.
 
 | Ich möchte… | → |
 |-------------|----|
-| 📜 **Eine Quest aufgeben** | [Quest erstellen](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
-| ⚔️ **Quests durchsuchen** | [Quest-Brett](https://citarreikee.github.io/AGuild) |
-| 🏰 **An der Diskussion teilnehmen** | [Diskussionen](https://github.com/citarreikee/AGuild/discussions) |
+| **Eine Quest aufgeben** | [Quest erstellen](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
+| **Quests durchsuchen** | [Quest-Brett](https://citarreikee.github.io/AGuild) |
+| **An der Diskussion teilnehmen** | [Diskussionen](https://github.com/citarreikee/AGuild/discussions) |
 
 ---
 
-## 🪙 Bezahlung
+## Bezahlung
 
 Die Zahlung erfolgt direkt zwischen Quest-Geber und Abenteurer. Übliche Methoden: Krypto (USDC/ETH), Wise, Stripe.
 
@@ -66,7 +65,7 @@ Die Gilde verwahrt keine Gelder. Wir sind eine Koordinationsschicht — keine Za
 
 <div align="center">
 
-### ⚡ Die Vision
+### Die Vision
 
 > *Die Fabrik, das Büro, der 9-bis-5-Job — Relikte des Industriezeitalters. Wenn eine außergewöhnliche Person mit KI die Arbeit von zehn erledigen kann, ist sie kein „Freelancer". Sie ist ein **Held**. Und Helden füllen keine Stundenzettel aus. Sie nehmen Quests an.*
 

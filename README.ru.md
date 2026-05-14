@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏰 Гильдия Искателей Приключений
+# Гильдия Искателей Приключений
 
 ### *"Наём — это пережиток. Добро пожаловать в Гильдию."*
 
@@ -12,19 +12,18 @@
 
 <table>
 <tr><td align="left">
-
-⚔️ &nbsp;Вы создаёте **в 10× больше ценности** с помощью ИИ — но в вашей расчётке всё ещё написано «сотрудник»?<br>
-📜 &nbsp;У вас есть навыки, нужные миру — но платформы хотят 30% только за соединение?<br>
-🏰 &nbsp;Вы верите, что будущее работы — это **квесты и репутация**, а не резюме и собеседования?
+&nbsp;Вы создаёте **в 10× больше ценности** с помощью ИИ — но в вашей расчётке всё ещё написано «сотрудник»?<br>
+&nbsp;У вас есть навыки, нужные миру — но платформы хотят 30% только за соединение?<br>
+&nbsp;Вы верите, что будущее работы — это **квесты и репутация**, а не резюме и собеседования?
 
 </td></tr>
 </table>
 
-### ✨ Вот ответ.
+### Вот ответ.
 
 <br>
 
-[🌐 Доска Квестов](https://citarreikee.github.io/AGuild) · [📜 Подать Квест](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) · [💬 Обсуждения](https://github.com/citarreikee/AGuild/discussions)
+[Доска Квестов](https://citarreikee.github.io/AGuild) · [Подать Квест](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) · [Обсуждения](https://github.com/citarreikee/AGuild/discussions)
 
 [**English**](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md)
 
@@ -50,13 +49,13 @@
 
 | Я хочу… | → |
 |---------|----|
-| 📜 **Подать квест** | [Создать Квест](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
-| ⚔️ **Искать квесты** | [Доска Квестов](https://citarreikee.github.io/AGuild) |
-| 🏰 **Присоединиться к беседе** | [Обсуждения](https://github.com/citarreikee/AGuild/discussions) |
+| **Подать квест** | [Создать Квест](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
+| **Искать квесты** | [Доска Квестов](https://citarreikee.github.io/AGuild) |
+| **Присоединиться к беседе** | [Обсуждения](https://github.com/citarreikee/AGuild/discussions) |
 
 ---
 
-## 🪙 Оплата
+## Оплата
 
 Оплата происходит напрямую между заказчиком и исполнителем. Обычные способы: криптовалюта (USDC/ETH), Wise, Stripe.
 
@@ -66,7 +65,7 @@
 
 <div align="center">
 
-### ⚡ Видение
+### Видение
 
 > *Завод, офис, с 9 до 5 — пережитки индустриальной эпохи. Когда выдающийся человек с ИИ может выполнить работу десяти, он не «фрилансер». Он — **герой**. А герои не заполняют табели. Они берут квесты.*
 

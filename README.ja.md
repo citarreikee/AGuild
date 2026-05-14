@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏰 冒険者ギルド
+# 冒険者ギルド
 
 ### *「雇用は過去の遺物。ギルドへようこそ。」*
 
@@ -12,19 +12,18 @@
 
 <table>
 <tr><td align="left">
-
-⚔️ &nbsp;AIで**10倍の価値**を生み出しているのに、給与明細にはまだ「社員」と書かれている？<br>
-📜 &nbsp;世界中の課題を解決できるスキルがあるのに、プラットフォームが30%も仲介料を取る？<br>
-🏰 &nbsp;仕事の未来は**クエストと評判**であり、履歴書や面接ではないと信じている？
+&nbsp;AIで**10倍の価値**を生み出しているのに、給与明細にはまだ「社員」と書かれている？<br>
+&nbsp;世界中の課題を解決できるスキルがあるのに、プラットフォームが30%も仲介料を取る？<br>
+&nbsp;仕事の未来は**クエストと評判**であり、履歴書や面接ではないと信じている？
 
 </td></tr>
 </table>
 
-### ✨ これが答えです。
+### これが答えです。
 
 <br>
 
-[🌐 クエストボード](https://citarreikee.github.io/AGuild) · [📜 クエスト投稿](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) · [💬 ディスカッション](https://github.com/citarreikee/AGuild/discussions)
+[クエストボード](https://citarreikee.github.io/AGuild) · [クエスト投稿](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) · [ディスカッション](https://github.com/citarreikee/AGuild/discussions)
 
 [**English**](README.md) · [中文](README.zh-CN.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Português](README.pt.md)
 
@@ -50,13 +49,13 @@
 
 | したいこと | → |
 |-----------|----|
-| 📜 **クエストを投稿** | [クエスト作成](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
-| ⚔️ **クエストを探す** | [クエストボード](https://citarreikee.github.io/AGuild) |
-| 🏰 **会話に参加** | [ディスカッション](https://github.com/citarreikee/AGuild/discussions) |
+| **クエストを投稿** | [クエスト作成](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
+| **クエストを探す** | [クエストボード](https://citarreikee.github.io/AGuild) |
+| **会話に参加** | [ディスカッション](https://github.com/citarreikee/AGuild/discussions) |
 
 ---
 
-## 🪙 支払い
+## 支払い
 
 支払いはクエスト投稿者と冒険者の間で直接行われます。主な方法：暗号通貨（USDC/ETH）、Wise、Stripe。
 
@@ -66,7 +65,7 @@
 
 <div align="center">
 
-### ⚡ ビジョン
+### ビジョン
 
 > *工場も、オフィスも、9時から5時も——産業時代の遺物。AIと共に一人で十人分の仕事ができる人間は、「フリーランサー」ではない。**ヒーロー**だ。ヒーローはタイムシートを書かない。クエストを受けるのだ。*
 

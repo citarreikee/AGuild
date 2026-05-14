@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏰 La Guilde des Aventuriers
+# La Guilde des Aventuriers
 
 ### *"Le salariat est une relique. Bienvenue à la Guilde."*
 
@@ -12,19 +12,18 @@
 
 <table>
 <tr><td align="left">
-
-⚔️ &nbsp;Vous produisez **10× plus de valeur** avec l'IA — mais votre fiche de paie dit encore "employé" ?<br>
-📜 &nbsp;Vous avez des compétences dont le monde a besoin — mais les plateformes prennent 30% juste pour vous connecter ?<br>
-🏰 &nbsp;Vous croyez que l'avenir du travail, ce sont des **quêtes et la réputation**, pas des CV et des entretiens ?
+&nbsp;Vous produisez **10× plus de valeur** avec l'IA — mais votre fiche de paie dit encore "employé" ?<br>
+&nbsp;Vous avez des compétences dont le monde a besoin — mais les plateformes prennent 30% juste pour vous connecter ?<br>
+&nbsp;Vous croyez que l'avenir du travail, ce sont des **quêtes et la réputation**, pas des CV et des entretiens ?
 
 </td></tr>
 </table>
 
-### ✨ Voici la réponse.
+### Voici la réponse.
 
 <br>
 
-[🌐 Tableau](https://citarreikee.github.io/AGuild) · [📜 Publier une Quête](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) · [💬 Discussions](https://github.com/citarreikee/AGuild/discussions)
+[Tableau](https://citarreikee.github.io/AGuild) · [Publier une Quête](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) · [Discussions](https://github.com/citarreikee/AGuild/discussions)
 
 [**English**](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md)
 
@@ -50,13 +49,13 @@ Pas de frais de plateforme. Pas d'intermédiaires. Pas de complexité.
 
 | Je veux… | → |
 |----------|----|
-| 📜 **Publier une quête** | [Créer une Quête](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
-| ⚔️ **Explorer les quêtes** | [Tableau](https://citarreikee.github.io/AGuild) |
-| 🏰 **Rejoindre la conversation** | [Discussions](https://github.com/citarreikee/AGuild/discussions) |
+| **Publier une quête** | [Créer une Quête](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
+| **Explorer les quêtes** | [Tableau](https://citarreikee.github.io/AGuild) |
+| **Rejoindre la conversation** | [Discussions](https://github.com/citarreikee/AGuild/discussions) |
 
 ---
 
-## 🪙 Paiement
+## Paiement
 
 Le paiement se fait directement entre le commanditaire et l'aventurier. Méthodes courantes : crypto (USDC/ETH), Wise, Stripe.
 
@@ -66,7 +65,7 @@ La Guilde ne détient pas de fonds. Nous sommes une couche de coordination — p
 
 <div align="center">
 
-### ⚡ La Vision
+### La Vision
 
 > *L'usine, le bureau, le 9h-17h — reliques de l'ère industrielle. Quand une personne exceptionnelle avec l'IA peut faire le travail de dix, ce n'est pas un "freelance". C'est un **héros**. Et les héros ne remplissent pas de feuilles de temps. Ils acceptent des quêtes.*
 
