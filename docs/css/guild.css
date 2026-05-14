@@ -1,846 +1,330 @@
 /* ============================================
    The Adventurer's Guild — Physical Quest Board
-   Wood · Parchment · Wax · Ink
+   Wood · Parchment · Ink · Pin
    ============================================ */
 
 @import url('https://fonts.googleapis.com/css2?family=Pirata+One&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&display=swap');
 
-/* ---- Design Tokens ---- */
 :root {
-  /* Wood board */
   --wood-dark: #3E2208;
   --wood-mid: #5D3A1A;
   --wood-light: #7B4F2C;
-  --wood-grain: #4A2E0F;
-
-  /* Parchment */
   --parchment-bright: #FBF3E0;
   --parchment: #F2E4C3;
   --parchment-aged: #E8D5A8;
   --parchment-dark: #D4BF90;
-
-  /* Ink */
   --ink: #1A0F0A;
   --ink-faded: #3D2B1F;
   --ink-light: #6B5040;
-
-  /* Wax & accents */
   --wax-red: #8B1A1A;
-  --wax-red-light: #B0413E;
   --gold: #C9A96E;
   --gold-bright: #DAA520;
-  --leather: #7B3F1A;
-
-  /* Semantic */
-  --success: #3D7A3D;
-  --warning: #B8860B;
-  --info: #5B7B9B;
-  --danger: #8B1A1A;
-  --muted: #8B7D6B;
-
-  /* Typography */
   --font-display: 'Pirata One', 'Georgia', serif;
   --font-body: 'Crimson Text', 'Georgia', serif;
-
-  /* Radii */
-  --radius-sm: 2px;
-  --radius: 4px;
-  --transition: 0.2s ease;
 }
 
-/* ---- Reset ---- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-html {
-  font-size: 16px;
-  scroll-behavior: smooth;
-}
+html { font-size: 16px; scroll-behavior: smooth; }
 
+/* ---- Wood Board ---- */
 body {
   font-family: var(--font-body);
   color: var(--ink);
-  line-height: 1.5;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
-
-  /* Wood board base */
   background-color: var(--wood-dark);
   background-image:
-    /* Fine grain lines */
-    repeating-linear-gradient(
-      1deg,
-      transparent,
-      transparent 1px,
-      rgba(0,0,0,0.06) 1px,
-      rgba(0,0,0,0.06) 2px
-    ),
-    /* Medium grain */
-    repeating-linear-gradient(
-      87deg,
-      transparent,
-      transparent 3px,
-      rgba(255,255,255,0.015) 3px,
-      rgba(255,255,255,0.015) 5px
-    ),
-    /* Wide grain bands */
-    repeating-linear-gradient(
-      0deg,
-      transparent,
-      transparent 35px,
-      rgba(0,0,0,0.04) 35px,
-      rgba(0,0,0,0.04) 38px
-    ),
-    /* Knot 1 */
-    radial-gradient(ellipse 60px 80px at 12% 22%, rgba(0,0,0,0.12) 0%, transparent 100%),
-    radial-gradient(ellipse 30px 40px at 14% 24%, rgba(60,30,8,0.3) 0%, transparent 100%),
-    /* Knot 2 */
-    radial-gradient(ellipse 50px 70px at 78% 65%, rgba(0,0,0,0.08) 0%, transparent 100%),
-    /* Knot 3 */
-    radial-gradient(ellipse 40px 55px at 45% 85%, rgba(0,0,0,0.06) 0%, transparent 100%),
-    /* Overall wood tone */
-    linear-gradient(180deg, var(--wood-mid) 0%, var(--wood-dark) 30%, var(--wood-mid) 60%, var(--wood-grain) 100%);
-
-  /* Warm ambient vignette */
-  position: relative;
+    repeating-linear-gradient(1deg, transparent, transparent 1px, rgba(0,0,0,0.05) 1px, rgba(0,0,0,0.05) 2px),
+    repeating-linear-gradient(87deg, transparent, transparent 3px, rgba(255,255,255,0.012) 3px, rgba(255,255,255,0.012) 5px),
+    repeating-linear-gradient(0deg, transparent, transparent 35px, rgba(0,0,0,0.04) 35px, rgba(0,0,0,0.04) 38px),
+    repeating-linear-gradient(0deg, transparent, transparent 180px, rgba(0,0,0,0.03) 180px, rgba(0,0,0,0.03) 182px),
+    radial-gradient(ellipse 60px 80px at 12% 22%, rgba(0,0,0,0.1) 0%, transparent 100%),
+    radial-gradient(ellipse 30px 40px at 14% 24%, rgba(60,30,8,0.25) 0%, transparent 100%),
+    radial-gradient(ellipse 50px 70px at 78% 65%, rgba(0,0,0,0.07) 0%, transparent 100%),
+    radial-gradient(ellipse 40px 55px at 45% 85%, rgba(0,0,0,0.05) 0%, transparent 100%),
+    linear-gradient(180deg, var(--wood-mid) 0%, var(--wood-dark) 30%, var(--wood-mid) 60%, var(--wood-grain, #4A2E0F) 100%);
 }
 
-/* Vignette overlay for depth */
+/* Vignette */
 body::after {
   content: '';
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
+  position: fixed; inset: 0; pointer-events: none; z-index: 0;
   background:
-    radial-gradient(ellipse at 50% 40%, transparent 50%, rgba(0,0,0,0.35) 100%),
-    radial-gradient(ellipse at 30% 30%, rgba(255,220,160,0.04) 0%, transparent 60%);
+    radial-gradient(ellipse at 50% 40%, transparent 45%, rgba(0,0,0,0.4) 100%),
+    radial-gradient(ellipse at 30% 25%, rgba(255,220,160,0.03) 0%, transparent 50%);
 }
 
 /* ---- Wooden Frame ---- */
 .frame {
-  position: fixed;
-  inset: 8px;
-  pointer-events: none;
-  z-index: 100;
+  position: fixed; inset: 8px; pointer-events: none; z-index: 100;
   border: 10px solid;
-  border-image: linear-gradient(
-    135deg,
-    #3A1F0A 0%, #5D3A1A 15%, #3A1F0A 30%,
-    #5D3A1A 50%, #3A1F0A 70%, #5D3A1A 85%, #3A1F0A 100%
-  ) 1;
-  box-shadow:
-    inset 0 0 0 4px rgba(0,0,0,0.3),
-    inset 0 0 0 7px rgba(0,0,0,0.15),
-    0 0 0 1px rgba(0,0,0,0.5);
+  border-image: linear-gradient(135deg, #3A1F0A 0%, #5D3A1A 15%, #3A1F0A 30%, #5D3A1A 50%, #3A1F0A 70%, #5D3A1A 85%, #3A1F0A 100%) 1;
+  box-shadow: inset 0 0 0 4px rgba(0,0,0,0.3), inset 0 0 0 7px rgba(0,0,0,0.15), 0 0 0 1px rgba(0,0,0,0.5);
   border-radius: 3px;
 }
 
-@media (max-width: 600px) {
-  .frame { inset: 3px; border-width: 6px; }
-}
+@media (max-width: 600px) { .frame { inset: 4px; border-width: 6px; } }
 
-/* ---- Header (Large Parchment Sign) ---- */
+/* ---- Header (Nailed Sign) ---- */
 .guild-header {
-  position: relative;
-  text-align: center;
-  padding: 2.5rem 2rem 2rem;
-  margin: 2rem auto;
-  max-width: 700px;
-  z-index: 1;
-
-  /* Parchment */
-  background: linear-gradient(
-    180deg,
-    var(--parchment-bright) 0%,
-    var(--parchment) 15%,
-    var(--parchment-aged) 50%,
-    var(--parchment) 85%,
-    var(--parchment-dark) 100%
-  );
-
-  /* Rough torn edges */
-  clip-path: polygon(
-    2% 1%, 8% 0%, 15% 1.5%, 25% 0.5%, 35% 1%, 48% 0%, 55% 1.5%,
-    65% 0.5%, 78% 1%, 88% 0%, 95% 1.5%, 99% 1%,
-    99% 8%, 100% 20%, 98% 35%, 99% 48%, 100% 60%, 98% 75%, 99% 88%, 100% 97%,
-    95% 99%, 85% 98%, 72% 99%, 60% 98%, 45% 99%, 32% 98%, 20% 99%, 8% 98%, 2% 97%,
-    1% 85%, 0% 72%, 2% 58%, 0% 42%, 1% 28%, 0% 15%, 2% 8%
-  );
-
-  /* Physical shadow cast on board */
-  box-shadow:
-    2px 4px 8px rgba(0,0,0,0.4),
-    0 1px 2px rgba(0,0,0,0.2);
-
-  /* Aged edges */
+  position: relative; text-align: center;
+  padding: 1.8rem 2rem;
+  margin: 2rem auto 1.5rem;
+  max-width: 500px; z-index: 1;
+  background: linear-gradient(180deg, var(--parchment-bright) 0%, var(--parchment) 20%, var(--parchment-aged) 60%, var(--parchment-dark) 100%);
+  clip-path: polygon(2% 1%, 10% 0%, 20% 1.5%, 35% 0.5%, 50% 1%, 65% 0.5%, 80% 1.5%, 90% 0%, 98% 1%, 99% 15%, 100% 35%, 98% 52%, 99% 70%, 100% 88%, 97% 99%, 85% 98%, 70% 99%, 55% 98%, 40% 99%, 25% 98%, 12% 99%, 3% 97%, 1% 80%, 0% 60%, 2% 40%, 0% 20%);
+  box-shadow: 2px 4px 8px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.2);
   border: 1px solid rgba(139,90,43,0.2);
 }
 
-/* Nails holding the header sign */
 .guild-header::before {
   content: '✦';
-  position: absolute;
-  top: 6px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 14px;
-  color: #4A4A4A;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.4);
+  position: absolute; top: 5px; left: 50%; transform: translateX(-50%);
+  font-size: 13px; color: #555; text-shadow: 0 1px 2px rgba(0,0,0,0.4);
 }
 
 .guild-header::after {
-  content: '✦  ✦';
-  position: absolute;
-  bottom: 6px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 12px;
-  color: #4A4A4A;
-  letter-spacing: 120px;
-  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  content: '✦     ✦';
+  position: absolute; bottom: 5px; left: 50%; transform: translateX(-50%);
+  font-size: 11px; color: #555; letter-spacing: 90px; text-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
-.guild-emblem {
-  font-size: 3.5rem;
-  margin-bottom: 0.5rem;
-  filter: drop-shadow(0 2px 3px rgba(0,0,0,0.3));
-}
+.guild-emblem { font-size: 2.8rem; margin-bottom: 0.25rem; filter: drop-shadow(0 2px 3px rgba(0,0,0,0.3)); }
 
 .guild-title {
   font-family: var(--font-display);
-  font-size: clamp(2rem, 5vw, 3.2rem);
-  font-weight: 400;
-  color: var(--ink);
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  line-height: 1.1;
+  font-size: clamp(2rem, 5vw, 3rem); font-weight: 400;
+  color: var(--ink); letter-spacing: 0.06em; text-transform: uppercase; line-height: 1.1;
 }
 
 .guild-subtitle {
   font-family: var(--font-display);
-  font-size: clamp(0.8rem, 1.5vw, 1rem);
-  color: var(--ink-faded);
-  margin-top: 0.5rem;
-  letter-spacing: 0.15em;
+  font-size: clamp(0.7rem, 1.2vw, 0.85rem); color: var(--ink-faded);
+  margin-top: 0.4rem; letter-spacing: 0.12em;
 }
 
-.guild-tagline {
-  font-style: italic;
-  color: var(--ink-light);
-  margin-top: 0.5rem;
-  font-size: 1.05rem;
-}
-
-/* ---- Stats Bar (Hanging Tags) ---- */
-.stats-bar {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  flex-wrap: wrap;
-  padding: 0.75rem 1.5rem 1.5rem;
-  position: relative;
-  z-index: 1;
-}
-
-.stat-item {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  font-family: var(--font-display);
-  font-size: 0.8rem;
-  color: var(--parchment);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  background: rgba(0,0,0,0.3);
-  padding: 0.4rem 0.9rem;
-  border-radius: 2px;
-  border-bottom: 3px solid var(--gold);
-  box-shadow: 0 2px 4px rgba(0,0,0,0.3);
-  position: relative;
-}
-
-/* Tag string */
-.stat-item::before {
-  content: '';
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  width: 1px;
-  height: 10px;
-  background: #A09080;
-}
-
-.stat-value {
-  color: var(--gold-bright);
-  font-size: 1.25rem;
-  font-family: var(--font-display);
-  letter-spacing: 0.02em;
-}
-
-/* ---- Filters (Wooden Peg Board) ---- */
-.filters-bar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.35rem;
-  flex-wrap: wrap;
-  padding: 0.75rem 1.5rem;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-  background: linear-gradient(180deg, rgba(62,34,8,0.95) 0%, rgba(62,34,8,0.85) 100%);
-  backdrop-filter: blur(4px);
-  border-bottom: 2px solid rgba(0,0,0,0.3);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.3);
-}
-
-.filter-label {
-  font-family: var(--font-display);
-  font-size: 0.6rem;
-  color: var(--parchment-dark);
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  margin-right: 0.1rem;
-  opacity: 0.8;
-}
-
-.filter-label--gap { margin-left: 0.75rem; }
-
-.filter-btn {
-  font-family: var(--font-display);
-  font-size: 0.7rem;
-  padding: 0.3rem 0.6rem;
-  border: 1px solid rgba(0,0,0,0.3);
-  background: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(0,0,0,0.15));
-  color: var(--parchment-dark);
-  border-radius: 2px;
-  cursor: pointer;
-  letter-spacing: 0.04em;
-  transition: all var(--transition);
-  white-space: nowrap;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.2);
-}
-
-.filter-btn:hover {
-  background: linear-gradient(180deg, rgba(255,255,255,0.12), rgba(0,0,0,0.1));
-  color: var(--parchment);
-  border-color: var(--gold);
-}
-
-.filter-btn.active {
-  background: linear-gradient(180deg, rgba(201,169,110,0.25), rgba(201,169,110,0.1));
-  border-color: var(--gold);
-  color: var(--gold-bright);
-  box-shadow: 0 0 6px rgba(201,169,110,0.2);
-}
-
-#sort-select {
-  margin-left: auto;
-  font-family: var(--font-display);
-  font-size: 0.7rem;
-  padding: 0.3rem 0.5rem;
-  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(0,0,0,0.2));
-  color: var(--parchment);
-  border: 1px solid rgba(0,0,0,0.3);
-  border-radius: 2px;
-  cursor: pointer;
-}
-
-/* ---- Content Area ---- */
-.content-area {
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 1.5rem 1.5rem 3rem;
-  position: relative;
-  z-index: 1;
-}
-
-.section-title {
-  font-family: var(--font-display);
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: var(--parchment);
-  margin-bottom: 1rem;
-  letter-spacing: 0.06em;
-  text-shadow: 0 2px 3px rgba(0,0,0,0.4);
-  padding-left: 0.5rem;
-  border-left: 3px solid var(--gold);
-}
-
-/* ---- Quest Board Grid ---- */
+/* ---- Quest Board ---- */
 .quest-board {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 1.5rem;
-  margin-bottom: 2.5rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem 4rem;
+  position: relative; z-index: 1;
 }
 
 /* ---- Quest Card (Pinned Parchment) ---- */
 .quest-card {
-  background: linear-gradient(
-    175deg,
-    var(--parchment-bright) 0%,
-    var(--parchment) 30%,
-    var(--parchment-aged) 60%,
-    var(--parchment-dark) 100%
-  );
-  border: 1px solid rgba(139,90,43,0.25);
+  background: linear-gradient(175deg, var(--parchment-bright) 0%, var(--parchment) 35%, var(--parchment-aged) 65%, var(--parchment-dark) 100%);
+  border: 1px solid rgba(139,90,43,0.2);
   border-radius: 2px;
-  padding: 1.1rem 1rem 0.9rem;
+  padding: 1.1rem 1rem 0.85rem;
   cursor: pointer;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 0.55rem;
-  transition: all var(--transition);
-
-  /* Cast shadow on the wood board */
-  box-shadow:
-    1px 3px 6px rgba(0,0,0,0.35),
-    0 1px 2px rgba(0,0,0,0.2);
-
-  /* Slight random rotations for realism */
-  transform: rotate(-0.3deg);
+  display: flex; flex-direction: column; gap: 0.5rem;
+  transition: all 0.25s ease;
+  box-shadow: 1px 3px 6px rgba(0,0,0,0.35), 0 1px 2px rgba(0,0,0,0.2);
+  transform: rotate(-0.25deg);
 }
 
-/* Alternate card rotations */
-.quest-card:nth-child(odd)  { transform: rotate(0.2deg); }
-.quest-card:nth-child(3n)   { transform: rotate(-0.4deg); }
-.quest-card:nth-child(5n+2) { transform: rotate(0.35deg); }
-.quest-card:nth-child(7n)   { transform: rotate(-0.15deg); }
+.quest-card:nth-child(2n)   { transform: rotate(0.3deg); }
+.quest-card:nth-child(3n)   { transform: rotate(-0.45deg); }
+.quest-card:nth-child(5n+1) { transform: rotate(0.2deg); }
+.quest-card:nth-child(7n+3) { transform: rotate(-0.15deg); }
 
 .quest-card:hover {
-  transform: rotate(0deg) translateY(-3px) !important;
-  box-shadow:
-    2px 5px 12px rgba(0,0,0,0.45),
-    0 2px 3px rgba(0,0,0,0.3);
+  transform: rotate(0deg) translateY(-4px) !important;
+  box-shadow: 2px 6px 14px rgba(0,0,0,0.5), 0 2px 4px rgba(0,0,0,0.3);
   z-index: 5;
 }
 
-/* Push pin at top center */
+/* Push pin */
 .quest-card::before {
   content: '';
-  position: absolute;
-  top: -7px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
+  position: absolute; top: -6px; left: 50%; transform: translateX(-50%);
+  width: 10px; height: 10px; border-radius: 50%;
   background: radial-gradient(circle at 40% 35%, #E85050, #8B1A1A);
-  box-shadow:
-    0 1px 2px rgba(0,0,0,0.5),
-    inset 0 -2px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.5), inset 0 -2px 3px rgba(0,0,0,0.2);
   z-index: 2;
 }
 
-/* Pin shadow cast on parchment */
+/* Pin shadow on parchment */
 .quest-card::after {
   content: '';
-  position: absolute;
-  top: 6px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 18px;
-  height: 4px;
-  background: rgba(0,0,0,0.08);
-  border-radius: 50%;
+  position: absolute; top: 5px; left: 50%; transform: translateX(-50%);
+  width: 16px; height: 3px; background: rgba(0,0,0,0.07); border-radius: 50%;
   z-index: 1;
 }
 
-.quest-card__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  gap: 0.5rem;
-}
+.quest-card__header { display: flex; justify-content: space-between; align-items: flex-start; gap: 0.5rem; }
 
-.quest-card__type {
-  font-size: 1.3rem;
-  line-height: 1;
-}
+.quest-card__type { font-size: 1.25rem; line-height: 1; }
 
 .quest-card__status {
-  font-family: var(--font-display);
-  font-size: 0.6rem;
-  letter-spacing: 0.06em;
-  padding: 0.15rem 0.5rem;
-  border-radius: 2px;
-  text-transform: uppercase;
+  font-family: var(--font-display); font-size: 0.55rem; letter-spacing: 0.06em;
+  padding: 0.1rem 0.45rem; border-radius: 2px; text-transform: uppercase;
 }
 
-.status-open       { background: #E8F0E0; color: #3D7A3D; border: 1px solid #A3C9A3; }
-.status-claimed    { background: #FDF3E0; color: #B8860B; border: 1px solid #D4B87A; }
-.status-review     { background: #E4ECF4; color: #5B7B9B; border: 1px solid #A3BBD0; }
-.status-completed  { background: #E8ECE0; color: #5A7A4A; border: 1px solid #A3B892; }
-.status-expired    { background: #F0EDE8; color: #8B7D6B; border: 1px solid #C4BBA8; }
+.status-open      { background: #E8F0E0; color: #3D7A3D; border: 1px solid #A3C9A3; }
+.status-claimed   { background: #FDF3E0; color: #B8860B; border: 1px solid #D4B87A; }
+.status-review    { background: #E4ECF4; color: #5B7B9B; border: 1px solid #A3BBD0; }
+.status-completed { background: #E8ECE0; color: #5A7A4A; border: 1px solid #A3B892; }
+.status-expired   { background: #F0EDE8; color: #8B7D6B; border: 1px solid #C4BBA8; }
 
 .quest-card__title {
-  font-family: var(--font-display);
-  font-size: 1.05rem;
-  font-weight: 400;
-  color: var(--ink);
-  line-height: 1.3;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
+  font-family: var(--font-display); font-size: 1.05rem; font-weight: 400;
+  color: var(--ink); line-height: 1.3;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
   letter-spacing: 0.02em;
 }
 
-.quest-card__meta {
-  display: flex;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  align-items: center;
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-}
+.quest-card__meta { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; font-size: 0.95rem; }
 
 .quest-card__reward {
-  color: var(--wax-red);
-  font-family: var(--font-display);
-  font-weight: 400;
-  font-size: 1.1rem;
-  letter-spacing: 0.03em;
+  color: var(--wax-red); font-family: var(--font-display); font-weight: 400;
+  font-size: 1.1rem; letter-spacing: 0.03em;
 }
 
-.quest-card__difficulty {
-  color: var(--ink-faded);
-  font-size: 0.78rem;
-  font-style: italic;
-}
+.quest-card__difficulty { color: var(--ink-faded); font-size: 0.78rem; font-style: italic; }
 
-.quest-card__labels {
-  display: flex;
-  gap: 0.3rem;
-  flex-wrap: wrap;
-}
+.quest-card__labels { display: flex; gap: 0.3rem; flex-wrap: wrap; }
 
 .quest-card__label {
-  font-family: var(--font-display);
-  font-size: 0.58rem;
-  letter-spacing: 0.05em;
-  padding: 0.1rem 0.45rem;
-  border-radius: 2px;
-  background: rgba(0,0,0,0.04);
-  color: var(--ink-faded);
-  border: 1px solid rgba(139,90,43,0.2);
+  font-family: var(--font-display); font-size: 0.55rem; letter-spacing: 0.05em;
+  padding: 0.08rem 0.4rem; border-radius: 2px;
+  background: rgba(0,0,0,0.03); color: var(--ink-faded);
+  border: 1px solid rgba(139,90,43,0.18);
 }
 
 .quest-card__label.rank-label {
-  border-color: var(--gold);
-  color: #8B6B2A;
-  background: rgba(201,169,110,0.12);
+  border-color: var(--gold); color: #8B6B2A; background: rgba(201,169,110,0.1);
 }
 
 .quest-card__footer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 0.7rem;
-  color: var(--ink-light);
-  margin-top: auto;
-  padding-top: 0.4rem;
-  border-top: 1px dashed rgba(139,90,43,0.2);
-  font-family: var(--font-body);
-  font-style: italic;
+  display: flex; justify-content: space-between; align-items: center;
+  font-size: 0.68rem; color: var(--ink-light); margin-top: auto;
+  padding-top: 0.35rem; border-top: 1px dashed rgba(139,90,43,0.18);
+  font-family: var(--font-body); font-style: italic;
 }
 
-.quest-card__number {
-  font-family: 'Courier New', monospace;
+.quest-card__number { font-family: 'Courier New', monospace; }
+
+/* ---- Post Quest Note (pinned in corner) ---- */
+.post-quest-note {
+  position: fixed; bottom: 2rem; right: 2rem; z-index: 50;
+  width: 80px; height: 80px;
+  background: linear-gradient(175deg, var(--parchment-bright) 0%, var(--parchment) 50%, var(--parchment-aged) 100%);
+  border: 1px solid rgba(139,90,43,0.3);
+  box-shadow: 1px 3px 8px rgba(0,0,0,0.4);
+  display: flex; align-items: center; justify-content: center; text-align: center;
+  font-family: var(--font-display); font-size: 0.85rem; color: var(--ink-faded);
+  text-decoration: none; letter-spacing: 0.04em; line-height: 1.2;
+  transform: rotate(4deg); transition: all 0.25s ease;
 }
 
-/* ---- Empty State ---- */
-.empty-state {
-  grid-column: 1 / -1;
-  text-align: center;
-  padding: 4rem 2rem;
+.post-quest-note:hover {
+  transform: rotate(0deg) translateY(-3px);
+  box-shadow: 2px 6px 14px rgba(0,0,0,0.5);
+  color: var(--ink);
 }
 
-.empty-state__icon { font-size: 3rem; margin-bottom: 0.75rem; opacity: 0.5; }
-
-.empty-state__text {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  color: var(--parchment-dark);
-  letter-spacing: 0.04em;
+.post-quest-note__pin {
+  position: absolute; top: -5px; left: 50%; transform: translateX(-50%);
+  width: 9px; height: 9px; border-radius: 50%;
+  background: radial-gradient(circle at 40% 35%, #E85050, #8B1A1A);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 }
 
 /* ---- Loading ---- */
 .loading {
-  grid-column: 1 / -1;
-  text-align: center;
-  padding: 4rem 2rem;
+  grid-column: 1 / -1; text-align: center; padding: 5rem 2rem;
 }
 
 .loading__spinner {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
-  border: 3px solid rgba(255,255,255,0.1);
-  border-top: 3px solid var(--gold);
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-  margin-bottom: 0.75rem;
+  display: inline-block; width: 28px; height: 28px;
+  border: 3px solid rgba(255,255,255,0.1); border-top: 3px solid var(--gold);
+  border-radius: 50%; animation: spin 0.8s linear infinite; margin-bottom: 0.75rem;
 }
 
 @keyframes spin { to { transform: rotate(360deg); } }
 
-.loading p {
-  font-family: var(--font-display);
-  color: var(--parchment-dark);
-  letter-spacing: 0.06em;
-  font-size: 0.95rem;
+.loading p { font-family: var(--font-display); color: var(--parchment-dark); letter-spacing: 0.06em; font-size: 0.9rem; }
+
+/* ---- Empty State ---- */
+.empty-state {
+  grid-column: 1 / -1; text-align: center; padding: 5rem 2rem;
 }
 
-/* ---- Leaderboard (Pinned Scrolls) ---- */
-.leaderboard-section { margin-bottom: 2.5rem; }
+.empty-state__icon { font-size: 3rem; margin-bottom: 0.75rem; opacity: 0.4; }
 
-.leaderboard {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 0.6rem;
+.empty-state__text {
+  font-family: var(--font-display); font-size: 1.15rem; color: var(--parchment-dark); letter-spacing: 0.04em;
 }
 
-.leaderboard-card {
-  display: flex;
-  align-items: center;
-  gap: 0.55rem;
-  background: linear-gradient(180deg,
-    rgba(251,243,224,0.12) 0%,
-    rgba(242,228,195,0.08) 50%,
-    rgba(212,191,144,0.06) 100%
-  );
-  border: 1px solid rgba(201,169,110,0.15);
-  border-radius: 2px;
-  padding: 0.55rem 0.7rem;
-  transition: all var(--transition);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.25);
-}
-
-.leaderboard-card:hover {
-  background: linear-gradient(180deg,
-    rgba(251,243,224,0.18) 0%,
-    rgba(242,228,195,0.12) 50%,
-    rgba(212,191,144,0.08) 100%
-  );
-  border-color: var(--gold);
-  transform: translateY(-1px);
-  box-shadow: 0 3px 8px rgba(0,0,0,0.35);
-}
-
-.leaderboard-card__rank {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  color: var(--gold-dim);
-  min-width: 1.75rem;
-  text-align: center;
-}
-
-.leaderboard-card__rank.top-1 { color: var(--gold-bright); font-size: 1.5rem; text-shadow: 0 0 8px rgba(218,165,32,0.4); }
-.leaderboard-card__rank.top-2 { color: #C0C0C0; }
-.leaderboard-card__rank.top-3 { color: #CD7F32; }
-
-.leaderboard-card__avatar {
-  width: 32px; height: 32px;
-  border-radius: 50%;
-  border: 2px solid rgba(201,169,110,0.3);
-}
-
-.leaderboard-card__name {
-  font-family: var(--font-display);
-  font-size: 0.85rem;
-  color: var(--parchment);
-  letter-spacing: 0.02em;
-}
-
-.leaderboard-card__quests {
-  margin-left: auto;
-  font-size: 0.7rem;
-  color: var(--parchment-dark);
-  white-space: nowrap;
-  font-style: italic;
-}
-
-/* ---- CTA (Wax Seal Button) ---- */
-.cta-section {
-  text-align: center;
-  padding: 2.5rem 1.5rem;
-}
-
-.btn-post-quest {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  font-family: var(--font-display);
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: 0.06em;
-  padding: 0.8rem 2rem;
-  background: linear-gradient(180deg,
-    var(--parchment-bright) 0%,
-    var(--parchment) 50%,
-    var(--parchment-aged) 100%
-  );
-  color: var(--ink);
-  border: 2px solid var(--gold);
-  border-radius: 2px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all var(--transition);
-  text-transform: uppercase;
-  box-shadow:
-    2px 4px 8px rgba(0,0,0,0.4),
-    0 0 0 4px rgba(139,26,26,0.3),
-    0 0 0 7px rgba(139,26,26,0.1);
-
-  /* Wax seal impression */
-  position: relative;
-}
-
-.btn-post-quest:hover {
-  transform: translateY(-2px);
-  box-shadow:
-    2px 6px 12px rgba(0,0,0,0.5),
-    0 0 0 4px rgba(139,26,26,0.4),
-    0 0 0 7px rgba(139,26,26,0.15);
-  border-color: var(--gold-bright);
-}
-
-/* ---- Modal (Unfurled Scroll) ---- */
+/* ---- Modal (Scroll) ---- */
 .modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.6);
-  backdrop-filter: blur(3px);
-  z-index: 50;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.5rem;
-  animation: fade-in 0.2s ease;
+  position: fixed; inset: 0; background: rgba(0,0,0,0.65); backdrop-filter: blur(4px);
+  z-index: 50; display: flex; align-items: center; justify-content: center;
+  padding: 1.5rem; animation: fade-in 0.2s ease;
 }
 
 @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
 
 .modal {
-  background: linear-gradient(180deg,
-    var(--parchment-bright) 0%,
-    var(--parchment) 10%,
-    var(--parchment) 90%,
-    var(--parchment-aged) 100%
-  );
-  border: 2px solid var(--gold);
-  border-radius: 2px;
-  max-width: 680px;
-  width: 100%;
-  max-height: 85vh;
-  overflow-y: auto;
-  box-shadow:
-    4px 8px 24px rgba(0,0,0,0.5),
-    0 0 0 1px rgba(139,90,43,0.3);
-
-  /* Scroll roller at top */
+  background: linear-gradient(180deg, var(--parchment-bright) 0%, var(--parchment) 8%, var(--parchment) 92%, var(--parchment-aged) 100%);
+  border: 2px solid var(--gold); border-radius: 2px;
+  max-width: 680px; width: 100%; max-height: 85vh; overflow-y: auto;
+  box-shadow: 4px 8px 24px rgba(0,0,0,0.5), 0 0 0 1px rgba(139,90,43,0.3);
   border-top: 6px solid #5D3A1A;
 }
 
 .modal__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 1.25rem 1.5rem 0.75rem;
-  border-bottom: 1px solid rgba(139,90,43,0.15);
+  display: flex; justify-content: space-between; align-items: flex-start;
+  padding: 1.25rem 1.5rem 0.75rem; border-bottom: 1px solid rgba(139,90,43,0.15);
 }
 
 .modal__title {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
-  font-weight: 400;
-  color: var(--ink);
-  letter-spacing: 0.03em;
+  font-family: var(--font-display); font-size: 1.25rem; font-weight: 400;
+  color: var(--ink); letter-spacing: 0.03em;
 }
 
 .modal__close {
-  background: none;
-  border: none;
-  color: var(--ink-light);
-  font-size: 1.5rem;
-  cursor: pointer;
-  padding: 0.25rem;
-  line-height: 1;
-  transition: color var(--transition);
+  background: none; border: none; color: var(--ink-light); font-size: 1.5rem;
+  cursor: pointer; padding: 0.25rem; line-height: 1; transition: color 0.2s;
 }
 
 .modal__close:hover { color: var(--ink); }
 
 .modal__body {
-  padding: 1.5rem;
-  font-size: 0.95rem;
-  line-height: 1.6;
-  color: var(--ink-faded);
-  white-space: pre-wrap;
+  padding: 1.5rem; font-size: 0.95rem; line-height: 1.65; color: var(--ink-faded); white-space: pre-wrap;
 }
 
 .modal__body a { color: var(--wax-red); }
 
 .modal__actions {
-  display: flex;
-  gap: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  border-top: 1px solid rgba(139,90,43,0.15);
+  display: flex; gap: 0.5rem; padding: 0.75rem 1.5rem; border-top: 1px solid rgba(139,90,43,0.15);
 }
 
 .btn {
-  font-family: var(--font-display);
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
-  padding: 0.5rem 1rem;
-  border-radius: 2px;
-  cursor: pointer;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: all var(--transition);
+  font-family: var(--font-display); font-size: 0.75rem; letter-spacing: 0.06em;
+  padding: 0.5rem 1rem; border-radius: 2px; cursor: pointer; text-decoration: none;
+  text-transform: uppercase; transition: all 0.2s;
 }
 
-.btn-primary {
-  background: var(--ink);
-  border: 1px solid var(--ink);
-  color: var(--parchment);
-}
-
-.btn-primary:hover {
-  background: var(--ink-faded);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-}
-
-.btn-secondary {
-  background: transparent;
-  border: 1px solid var(--ink-light);
-  color: var(--ink-faded);
-}
-
-.btn-secondary:hover {
-  border-color: var(--ink);
-  color: var(--ink);
-}
+.btn-primary { background: var(--ink); border: 1px solid var(--ink); color: var(--parchment); }
+.btn-primary:hover { background: var(--ink-faded); box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+.btn-secondary { background: transparent; border: 1px solid var(--ink-light); color: var(--ink-faded); }
+.btn-secondary:hover { border-color: var(--ink); color: var(--ink); }
 
 /* ---- Error Toast ---- */
 .error-toast {
-  position: fixed;
-  bottom: 1.5rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background: var(--wax-red);
-  color: var(--parchment-bright);
-  font-family: var(--font-display);
-  font-size: 0.8rem;
-  letter-spacing: 0.04em;
-  padding: 0.6rem 1.2rem;
-  border-radius: 2px;
-  z-index: 100;
-  animation: toast-in 0.3s ease;
-  box-shadow: 0 4px 16px rgba(139,26,26,0.3);
+  position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%);
+  background: var(--wax-red); color: var(--parchment-bright);
+  font-family: var(--font-display); font-size: 0.8rem; letter-spacing: 0.04em;
+  padding: 0.6rem 1.2rem; border-radius: 2px; z-index: 100;
+  animation: toast-in 0.3s ease; box-shadow: 0 4px 16px rgba(139,26,26,0.3);
 }
 
 @keyframes toast-in {
@@ -850,47 +334,27 @@ body::after {
 
 /* ---- Footer ---- */
 .guild-footer {
-  text-align: center;
-  padding: 2rem 1.5rem;
-  color: var(--parchment-dark);
-  font-size: 0.8rem;
-  position: relative;
-  z-index: 1;
+  text-align: center; padding: 2rem 1.5rem 3rem;
+  color: var(--parchment-dark); font-size: 0.78rem;
+  position: relative; z-index: 1;
 }
 
-.guild-footer a {
-  color: var(--gold-bright);
-  text-decoration: none;
-  opacity: 0.8;
-  transition: opacity var(--transition);
-}
-
+.guild-footer a { color: var(--gold-bright); text-decoration: none; opacity: 0.7; transition: opacity 0.2s; }
 .guild-footer a:hover { opacity: 1; }
 
 /* ---- Responsive ---- */
 @media (max-width: 768px) {
-  .guild-header { margin: 1rem; padding: 1.5rem 1.25rem; }
-  .guild-emblem { font-size: 2.5rem; }
-  .stats-bar { gap: 0.5rem; padding: 0.5rem 0.75rem 1rem; }
-  .stat-item { font-size: 0.65rem; padding: 0.3rem 0.6rem; }
-  .stat-value { font-size: 0.95rem; }
-  .filters-bar { gap: 0.2rem; padding: 0.5rem 0.5rem; }
-  .filter-btn { font-size: 0.6rem; padding: 0.25rem 0.4rem; }
-  .filter-label--gap { margin-left: 0.4rem; }
-  #sort-select { font-size: 0.6rem; }
-  .quest-board { grid-template-columns: 1fr; gap: 1.25rem; }
-  .content-area { padding: 1rem 0.75rem 2rem; }
-  .leaderboard { grid-template-columns: 1fr; }
-  .section-title { font-size: 1.2rem; }
+  .guild-header { margin: 1.2rem 1rem 1rem; padding: 1.2rem 1.25rem; }
+  .guild-emblem { font-size: 2.2rem; }
+  .quest-board { grid-template-columns: 1fr; gap: 1.25rem; padding: 0.75rem 0.75rem 3.5rem; }
+  .post-quest-note { bottom: 1.25rem; right: 1rem; width: 68px; height: 68px; font-size: 0.72rem; }
 }
 
 @media (max-width: 480px) {
-  .quest-card { padding: 0.9rem 0.8rem 0.75rem; }
-  .quest-card__title { font-size: 0.95rem; }
-  .quest-card__reward { font-size: 1rem; }
+  .quest-card { padding: 0.9rem 0.8rem 0.7rem; }
+  .quest-card__title { font-size: 0.9rem; }
 }
 
-/* ---- Scrollbar ---- */
-::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar { width: 5px; }
 ::-webkit-scrollbar-track { background: var(--wood-dark); }
 ::-webkit-scrollbar-thumb { background: var(--wood-light); border-radius: 3px; }
