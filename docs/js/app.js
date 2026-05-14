@@ -1,6 +1,6 @@
 const App = (() => {
   let allQuests = [];
-  const $  = sel => document.querySelector(sel);
+  const $ = sel => document.querySelector(sel);
 
   async function init() {
     try {
@@ -27,7 +27,7 @@ const App = (() => {
     if (!allQuests.length) {
       board.innerHTML = `<div class="empty-state">
         <div class="empty-state__icon">📜</div>
-        <p class="empty-state__text">No quests pinned to the board yet</p>
+        <p class="empty-state__text">The board is empty</p>
         <p style="color:var(--ink-light);margin-top:0.5rem;font-size:0.85rem;">Post the first quest, adventurer.</p>
       </div>`;
       return;
@@ -42,25 +42,17 @@ const App = (() => {
 
   function questCardHTML(q) {
     const sc = `status-${q.status}`;
-    const st = { open:'Open',claimed:'Claimed',review:'In Review',completed:'Completed',expired:'Expired' }[q.status]||'Open';
-    const icon = (q.type||'📜').split(' ')[0];
-    const reward = q.reward ? `$${q.reward.toLocaleString()}` : 'Pro Bono';
-    const date = q.created_at ? new Date(q.created_at).toLocaleDateString('en-US',{month:'short',day:'numeric'}) : '';
-    const rank = (q.rank||'').replace('💰 ','').replace(' Quest','');
+    const st = { open:'Open', claimed:'Claimed', completed:'Completed' }[q.status] || 'Open';
+    const reward = q.reward ? `$${q.reward.toLocaleString()}` : '—';
+    const date = q.created_at ? new Date(q.created_at).toLocaleDateString('en-US', { month:'short', day:'numeric' }) : '';
 
     return `<div class="quest-card" data-quest-id="${q.id}">
       <div class="quest-card__header">
-        <span class="quest-card__type">${icon}</span>
         <span class="quest-card__status ${sc}">${st}</span>
       </div>
       <div class="quest-card__title">${escapeHTML(q.title)}</div>
       <div class="quest-card__meta">
         <span class="quest-card__reward">💰 ${reward}</span>
-        ${q.difficulty?`<span class="quest-card__difficulty">${q.difficulty}</span>`:''}
-      </div>
-      <div class="quest-card__labels">
-        ${rank?`<span class="quest-card__label rank-label">${rank}</span>`:''}
-        ${q.type?`<span class="quest-card__label">${q.type}</span>`:''}
       </div>
       <div class="quest-card__footer">
         <span class="quest-card__number">#${q.id}</span>
@@ -70,48 +62,39 @@ const App = (() => {
   }
 
   function showQuestDetail(id) {
-    const q = allQuests.find(q => q.id===Number(id));
+    const q = allQuests.find(q => q.id === Number(id));
     if (!q) return;
-    const st = { open:'Open',claimed:'Claimed',review:'In Review',completed:'Completed',expired:'Expired' }[q.status]||'Open';
-    const icon = (q.type||'📜').split(' ')[0];
-    const reward = q.reward ? `$${q.reward.toLocaleString()}` : 'Pro Bono';
-    const rank = (q.rank||'').replace('💰 ','').replace(' Quest','');
+    const st = { open:'Open', claimed:'Claimed', completed:'Completed' }[q.status] || 'Open';
+    const reward = q.reward ? `$${q.reward.toLocaleString()}` : '—';
 
     const overlay = document.createElement('div');
     overlay.className = 'modal-overlay';
     overlay.innerHTML = `<div class="modal">
       <div class="modal__header">
         <div>
-          <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.5rem;">
-            <span style="font-size:1.5rem;">${icon}</span>
-            <span class="quest-card__status status-${q.status}">${st}</span>
-          </div>
-          <div class="modal__title">${escapeHTML(q.title)}</div>
-          <div style="display:flex;gap:1rem;margin-top:0.5rem;font-size:0.9rem;">
-            <span style="color:var(--wax-red);font-family:var(--font-display);font-weight:400;">💰 ${reward}</span>
-            ${q.difficulty?`<span>${q.difficulty}</span>`:''}
-            ${rank?`<span class="quest-card__label rank-label">${rank}</span>`:''}
-          </div>
+          <span class="quest-card__status status-${q.status}">${st}</span>
+          <div class="modal__title" style="margin-top:0.5rem;">${escapeHTML(q.title)}</div>
+          <div style="margin-top:0.25rem;font-size:1rem;color:var(--wax-red);font-family:var(--font-display);">💰 ${reward}</div>
         </div>
         <button class="modal__close">&times;</button>
       </div>
-      <div class="modal__body">${q.body?escapeHTML(q.body):'<p style="color:var(--ink-light);">No details inscribed.</p>'}</div>
+      <div class="modal__body">${q.body ? escapeHTML(q.body) : '<p style="color:var(--ink-light);">No details inscribed.</p>'}</div>
       <div class="modal__actions">
         <a href="${q.url}" target="_blank" rel="noopener" class="btn btn-primary">View on GitHub</a>
-        ${q.status==='open'?`<a href="${q.url}" target="_blank" rel="noopener" class="btn btn-secondary">Claim Quest</a>`:''}
+        ${q.status === 'open' ? `<a href="${q.url}" target="_blank" rel="noopener" class="btn btn-secondary">Claim Quest</a>` : ''}
       </div>
     </div>`;
     document.body.appendChild(overlay);
 
     const close = () => overlay.remove();
-    overlay.querySelector('.modal__close').addEventListener('click',close);
-    overlay.addEventListener('click',e=>{if(e.target===overlay)close();});
-    document.addEventListener('keydown',function esc(e){if(e.key==='Escape'){close();document.removeEventListener('keydown',esc);}});
+    overlay.querySelector('.modal__close').addEventListener('click', close);
+    overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+    document.addEventListener('keydown', function esc(e) { if (e.key === 'Escape') { close(); document.removeEventListener('keydown', esc); } });
   }
 
-  function escapeHTML(s) { const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+  function escapeHTML(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }
 
   return { init };
 })();
 
-document.addEventListener('DOMContentLoaded',()=>App.init());
+document.addEventListener('DOMContentLoaded', () => App.init());

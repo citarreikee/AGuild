@@ -1,8 +1,5 @@
 blank_issues_enabled: false
 contact_links:
-  - name: 🏰 Guild Hall (Discussions)
+  - name: 🏰 Guild Discussions
     url: https://github.com/citarreikee/AGuild/discussions
-    about: Introduce yourself, ask questions, propose guild improvements
-  - name: 📖 Quest Guide
-    url: https://github.com/citarreikee/AGuild/blob/main/docs/quest-guide.md
-    about: Read the quest guide before posting or claiming
+    about: Ask questions, introduce yourself, or propose guild improvements

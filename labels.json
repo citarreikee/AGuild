@@ -1,25 +1,5 @@
 [
-  {"name": "💰 S-Rank Quest", "color": "FFD700", "description": "$1,000+ bounty"},
-  {"name": "💰 A-Rank Quest", "color": "C0C0C0", "description": "$500-$999 bounty"},
-  {"name": "💰 B-Rank Quest", "color": "CD7F32", "description": "$200-$499 bounty"},
-  {"name": "💰 C-Rank Quest", "color": "8B4513", "description": "$50-$199 bounty"},
-  {"name": "💰 D-Rank Quest", "color": "696969", "description": "Under $50 bounty"},
-  {"name": "🤝 Pro Bono", "color": "2ECC71", "description": "Open source / public good"},
-  {"name": "⚔️ Code", "color": "3498DB", "description": "Software, scripts, automation"},
-  {"name": "🎨 Design", "color": "E91E63", "description": "UI/UX, branding, illustration, 3D"},
-  {"name": "📜 Writing", "color": "9B59B6", "description": "Copy, docs, translation"},
-  {"name": "🔮 AI/ML", "color": "1ABC9C", "description": "Models, tuning, prompt engineering"},
-  {"name": "🧪 Data", "color": "E67E22", "description": "Analysis, scraping, dashboards"},
-  {"name": "🛡️ Strategy", "color": "34495E", "description": "Architecture, consulting, code review"},
-  {"name": "🎵 Media", "color": "E74C3C", "description": "Audio, video, animation"},
-  {"name": "📋 Open", "color": "2ECC71", "description": "Quest awaiting adventurers"},
-  {"name": "⚡ Claimed", "color": "F1C40F", "description": "Quest in progress"},
-  {"name": "🔍 Review", "color": "3498DB", "description": "Deliverable under review"},
-  {"name": "✅ Completed", "color": "1F8B4C", "description": "Quest completed and paid"},
-  {"name": "❌ Expired", "color": "95A5A6", "description": "Quest expired or cancelled"},
-  {"name": "⭐ Novice", "color": "81C784", "description": "Beginner-friendly"},
-  {"name": "⭐⭐ Adventurer", "color": "4CAF50", "description": "Requires some experience"},
-  {"name": "⭐⭐⭐ Veteran", "color": "FF9800", "description": "Requires deep expertise"},
-  {"name": "⭐⭐⭐⭐ Master", "color": "F44336", "description": "Expert level"},
-  {"name": "⭐⭐⭐⭐⭐ Legend", "color": "9C27B0", "description": "Only the best can complete"}
+  {"name": "🟢 Open", "color": "2ECC71", "description": "Quest awaiting an adventurer"},
+  {"name": "🟡 Claimed", "color": "F1C40F", "description": "Quest in progress"},
+  {"name": "✅ Completed", "color": "1F8B4C", "description": "Quest completed and paid"}
 ]
