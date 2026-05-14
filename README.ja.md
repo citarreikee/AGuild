@@ -1,7 +1,5 @@
 <div align="center">
 
-# 冒険者ギルド
-
 ### *「雇用は過去の遺物。ギルドへようこそ。」*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)

@@ -1,7 +1,5 @@
 <div align="center">
 
-# 冒险家公会
-
 ### *"雇佣是旧时代的遗物。欢迎来到公会。"*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)

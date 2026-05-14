@@ -1,7 +1,5 @@
 <div align="center">
 
-# 모험가 길드
-
 ### *"고용은 과거의 유물. 길드에 오신 것을 환영합니다."*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)

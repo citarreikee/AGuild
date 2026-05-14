@@ -1,7 +1,5 @@
 <div align="center">
 
-# El Gremio de Aventureros
-
 ### *"El empleo es una reliquia. Bienvenido al Gremio."*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
