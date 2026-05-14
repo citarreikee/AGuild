@@ -14,15 +14,22 @@ const App = (() => {
   // ---- Init ----
 
   async function init() {
-    renderLoading();
     try {
       const issues = await GuildAPI.fetchIssues();
+      console.log(`[Guild] Loaded ${issues.length} quests from API`);
       allQuests = issues.map(GuildAPI.normalizeIssue);
       render();
       bindFilters();
     } catch (err) {
-      console.error('Failed to load quests:', err);
-      showError('Failed to load quest board. GitHub API may be rate-limited. Try again in a minute.');
+      console.error('[Guild] Failed to load quests:', err);
+      const board = $('#quest-board');
+      if (board) {
+        board.innerHTML = `<div class="empty-state">
+          <div class="empty-state__icon">⚠️</div>
+          <p class="empty-state__text">Failed to scry the quest board</p>
+          <p style="color:var(--text-muted);margin-top:0.5rem;font-size:0.8rem;">${escapeHTML(err.message)}</p>
+        </div>`;
+      }
     }
   }
 
