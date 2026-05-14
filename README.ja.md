@@ -25,7 +25,7 @@
 
 [クエストボード](https://citarreikee.github.io/AGuild) · [クエスト投稿](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) · [ディスカッション](https://github.com/citarreikee/AGuild/discussions)
 
-[**English**](README.md) · [中文](README.zh-CN.md) · [한국어](README.ko.md) · [Español](README.es.md) · [Português](README.pt.md)
+[**English**](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md)
 
 </div>
 
