@@ -10,9 +10,9 @@
 
 <table>
 <tr><td align="left">
-&nbsp;AI로 **10배의 가치**를 창출하는데, 월급 명세서에는 아직도 "직원"이라 적혀있나요?<br>
+&nbsp;AI로 <b>10배의 가치</b>를 창출하는데, 월급 명세서에는 아직도 "직원"이라 적혀있나요?<br>
 &nbsp;전 세계 문제를 해결할 능력이 있는데, 플랫폼이 중개 수수료 30%를 가져가나요?<br>
-&nbsp;일의 미래는 **퀘스트와 평판**이라고 믿으시나요? 이력서와 면접이 아니라?
+&nbsp;일의 미래는 <b>퀘스트와 평판</b>이라고 믿으시나요? 이력서와 면접이 아니라?
 
 </td></tr>
 </table>
@@ -23,7 +23,7 @@
 
 [퀘스트 보드](https://citarreikee.github.io/AGuild) · [퀘스트 등록](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) · [토론](https://github.com/citarreikee/AGuild/discussions)
 
-[**English**](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md)
+[<b>English</b>](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md)
 
 </div>
 
@@ -47,9 +47,9 @@
 
 | 원하는 작업 | → |
 |------------|----|
-| **퀘스트 등록** | [퀘스트 생성](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
-| **퀘스트 찾기** | [퀘스트 보드](https://citarreikee.github.io/AGuild) |
-| **대화 참여** | [토론](https://github.com/citarreikee/AGuild/discussions) |
+| <b>퀘스트 등록</b> | [퀘스트 생성](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
+| <b>퀘스트 찾기</b> | [퀘스트 보드](https://citarreikee.github.io/AGuild) |
+| <b>대화 참여</b> | [토론](https://github.com/citarreikee/AGuild/discussions) |
 
 ---
 
@@ -65,7 +65,7 @@
 
 ### 비전
 
-> *공장, 사무실, 9-to-5 — 산업 시대의 유물. AI와 함께 열 사람 몫을 해내는 사람은 "프리랜서"가 아닙니다. 그들은 **영웅**입니다. 영웅은 근무 시간표를 작성하지 않습니다. 퀘스트를 수락할 뿐입니다.*
+> *공장, 사무실, 9-to-5 — 산업 시대의 유물. AI와 함께 열 사람 몫을 해내는 사람은 "프리랜서"가 아닙니다. 그들은 <b>영웅</b>입니다. 영웅은 근무 시간표를 작성하지 않습니다. 퀘스트를 수락할 뿐입니다.*
 
 </div>
 
@@ -73,8 +73,8 @@
 
 <div align="center">
 
-**MIT License** · [citarreikee](https://github.com/citarreikee)
+<b>MIT License</b> · [citarreikee](https://github.com/citarreikee)
 
-<sub>회사가 아닙니다. 플랫폼이 아닙니다. **길드**입니다.</sub>
+<sub>회사가 아닙니다. 플랫폼이 아닙니다. <b>길드</b>입니다.</sub>
 
 </div>

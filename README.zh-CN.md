@@ -10,9 +10,9 @@
 
 <table>
 <tr><td align="left">
-&nbsp;你用 AI 交付了**十倍的价值**——但工资单上写的还是"员工"？<br>
+&nbsp;你用 AI 交付了<b>十倍的价值</b>——但工资单上写的还是"员工"？<br>
 &nbsp;你的技能可以解决世界上的任何问题——但平台要抽 30% 才让你接活？<br>
-&nbsp;你相信未来的工作形式是**悬赏和声望**，而不是简历和面试？
+&nbsp;你相信未来的工作形式是<b>悬赏和声望</b>，而不是简历和面试？
 
 </td></tr>
 </table>
@@ -23,7 +23,7 @@
 
 [悬赏看板](https://citarreikee.github.io/AGuild) · [发布悬赏](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) · [讨论区](https://github.com/citarreikee/AGuild/discussions)
 
-[**English**](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md)
+[<b>English</b>](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md)
 
 </div>
 
@@ -47,9 +47,9 @@
 
 | 我想… | → |
 |-------|----|
-| **发布悬赏** | [创建任务](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
-| **浏览任务** | [悬赏看板](https://citarreikee.github.io/AGuild) |
-| **加入讨论** | [讨论区](https://github.com/citarreikee/AGuild/discussions) |
+| <b>发布悬赏</b> | [创建任务](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
+| <b>浏览任务</b> | [悬赏看板](https://citarreikee.github.io/AGuild) |
+| <b>加入讨论</b> | [讨论区](https://github.com/citarreikee/AGuild/discussions) |
 
 ---
 
@@ -65,7 +65,7 @@
 
 ### 愿景
 
-> *工厂、办公室、朝九晚五——工业时代的遗物。当一个卓越的人借助 AI 能完成十个人的工作时，他就不再是"自由职业者"。他是**英雄**。英雄不填工时表。他们接悬赏。*
+> *工厂、办公室、朝九晚五——工业时代的遗物。当一个卓越的人借助 AI 能完成十个人的工作时，他就不再是"自由职业者"。他是<b>英雄</b>。英雄不填工时表。他们接悬赏。*
 
 </div>
 
@@ -73,8 +73,8 @@
 
 <div align="center">
 
-**MIT License** · [citarreikee](https://github.com/citarreikee)
+<b>MIT License</b> · [citarreikee](https://github.com/citarreikee)
 
-<sub>不是公司。不是平台。是**公会**。</sub>
+<sub>不是公司。不是平台。是<b>公会</b>。</sub>
 
 </div>

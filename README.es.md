@@ -10,9 +10,9 @@
 
 <table>
 <tr><td align="left">
-&nbsp;¿Entregas **10× más valor** con IA — pero tu recibo de sueldo aún dice "empleado"?<br>
+&nbsp;¿Entregas <b>10× más valor</b> con IA — pero tu recibo de sueldo aún dice "empleado"?<br>
 &nbsp;¿Tienes habilidades que el mundo necesita — pero las plataformas quieren el 30% solo por conectarte?<br>
-&nbsp;¿Crees que el futuro del trabajo son **misiones y reputación**, no currículums ni entrevistas?
+&nbsp;¿Crees que el futuro del trabajo son <b>misiones y reputación</b>, no currículums ni entrevistas?
 
 </td></tr>
 </table>
@@ -23,7 +23,7 @@
 
 [Tablero](https://citarreikee.github.io/AGuild) · [Publicar Misión](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) · [Discusiones](https://github.com/citarreikee/AGuild/discussions)
 
-[**English**](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md)
+[<b>English</b>](README.md) · [中文](README.zh-CN.md) · [日本語](README.ja.md) · [한국어](README.ko.md) · [Español](README.es.md)
 
 </div>
 
@@ -47,9 +47,9 @@ Sin comisiones de plataforma. Sin intermediarios. Sin complejidad.
 
 | Quiero… | → |
 |---------|----|
-| **Publicar una misión** | [Crear Misión](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
-| **Explorar misiones** | [Tablero](https://citarreikee.github.io/AGuild) |
-| **Unirme a la conversación** | [Discusiones](https://github.com/citarreikee/AGuild/discussions) |
+| <b>Publicar una misión</b> | [Crear Misión](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
+| <b>Explorar misiones</b> | [Tablero](https://citarreikee.github.io/AGuild) |
+| <b>Unirme a la conversación</b> | [Discusiones](https://github.com/citarreikee/AGuild/discussions) |
 
 ---
 
@@ -65,7 +65,7 @@ El Gremio no retiene fondos. Somos una capa de coordinación — no una platafor
 
 ### La Visión
 
-> *La fábrica, la oficina, el horario de 9 a 5 — reliquias de la era industrial. Cuando una persona excepcional con IA puede hacer el trabajo de diez, no es un "freelancer". Es un **héroe**. Y los héroes no rellenan hojas de horas. Aceptan misiones.*
+> *La fábrica, la oficina, el horario de 9 a 5 — reliquias de la era industrial. Cuando una persona excepcional con IA puede hacer el trabajo de diez, no es un "freelancer". Es un <b>héroe</b>. Y los héroes no rellenan hojas de horas. Aceptan misiones.*
 
 </div>
 
@@ -73,8 +73,8 @@ El Gremio no retiene fondos. Somos una capa de coordinación — no una platafor
 
 <div align="center">
 
-**MIT License** · [citarreikee](https://github.com/citarreikee)
+<b>MIT License</b> · [citarreikee](https://github.com/citarreikee)
 
-<sub>No es una empresa. No es una plataforma. Es un **gremio**.</sub>
+<sub>No es una empresa. No es una plataforma. Es un <b>gremio</b>.</sub>
 
 </div>
