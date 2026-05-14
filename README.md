@@ -1,10 +1,8 @@
 <div align="center">
 
-# 🏰 The Adventurer's Guild · 冒险家公会
+# 🏰 The Adventurer's Guild
 
-### *"AI makes great people 10× stronger. Employment is a relic. Welcome to the Guild."*
-
-### *「AI 让强者十倍强大。雇佣是旧时代的遗物。欢迎来到公会。」*
+### *"Employment is a relic. Welcome to the Guild."*
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Quest Board](https://img.shields.io/badge/Quest_Board-Live-gold)](https://citarreikee.github.io/AGuild)
@@ -27,6 +25,8 @@
 <br>
 
 [🌐 Quest Board](https://citarreikee.github.io/AGuild) · [📜 Post a Quest](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) · [💬 Discussions](https://github.com/citarreikee/AGuild/discussions)
+
+[**中文**](README.zh-CN.md)
 
 </div>
 
@@ -69,8 +69,6 @@ The Guild does not hold funds. We're a coordination layer — not a payment plat
 ### ⚡ The Vision
 
 > *The factory, the office, the 9-to-5 — relics of an industrial age. When one exceptional person with AI can do the work of ten, that person isn't a "freelancer." They're a **hero**. And heroes don't fill timesheets. They take quests.*
->
-> *工厂、办公室、朝九晚五——工业时代的遗物。当一个卓越的人借助 AI 能完成十个人的工作时，他就不再是"自由职业者"。他是**英雄**。英雄不填工时表。他们接悬赏。*
 
 </div>
 
