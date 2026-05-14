@@ -11,6 +11,7 @@
 [![Hermes](https://img.shields.io/badge/Hermes-Skill-orange)](https://github.com/titanwings/colleague-skill)
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-teal)](https://github.com/titanwings/colleague-skill)
 [![Codex](https://img.shields.io/badge/Codex-Skill-black)](https://github.com/titanwings/colleague-skill)
+[![Discord](https://img.shields.io/badge/Discord-Join_Community-5865F2?logo=discord&logoColor=white)](https://discord.gg/TODO)
 
 <br>
 
@@ -49,13 +50,13 @@
 
 ---
 
-## Install
+## 安装
 
-It's 2026 — you have an Agent. Tell it:
+都 2026 年了，你有一个 Agent。告诉它：
 
-> Install the guild skill for me: `https://github.com/citarreikee/AGuild`
+> 帮我安装 guild skill：`https://github.com/citarreikee/AGuild`
 
-The Agent clones the repo into the skills directory. Once installed, type `/guild` to open the quest board.
+Agent 会自动克隆仓库到 skills 目录。安装完成后，输入 `/guild` 打开悬赏看板。
 
 ---
 

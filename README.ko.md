@@ -11,6 +11,7 @@
 [![Hermes](https://img.shields.io/badge/Hermes-Skill-orange)](https://github.com/titanwings/colleague-skill)
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-teal)](https://github.com/titanwings/colleague-skill)
 [![Codex](https://img.shields.io/badge/Codex-Skill-black)](https://github.com/titanwings/colleague-skill)
+[![Discord](https://img.shields.io/badge/Discord-Join_Community-5865F2?logo=discord&logoColor=white)](https://discord.gg/TODO)
 
 <br>
 
@@ -49,13 +50,13 @@
 
 ---
 
-## Install
+## 설치
 
-It's 2026 — you have an Agent. Tell it:
+2026년입니다. 당신에게는 에이전트가 있습니다. 말해보세요:
 
-> Install the guild skill for me: `https://github.com/citarreikee/AGuild`
+> 길드 스킬을 설치해줘: `https://github.com/citarreikee/AGuild`
 
-The Agent clones the repo into the skills directory. Once installed, type `/guild` to open the quest board.
+에이전트가 스킬 디렉토리에 리포지토리를 클론합니다. 설치 후 `/guild`를 입력해 퀘스트 보드를 여세요.
 
 ---
 

@@ -11,6 +11,7 @@
 [![Hermes](https://img.shields.io/badge/Hermes-Skill-orange)](https://github.com/titanwings/colleague-skill)
 [![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-teal)](https://github.com/titanwings/colleague-skill)
 [![Codex](https://img.shields.io/badge/Codex-Skill-black)](https://github.com/titanwings/colleague-skill)
+[![Discord](https://img.shields.io/badge/Discord-Join_Community-5865F2?logo=discord&logoColor=white)](https://discord.gg/TODO)
 
 <br>
 
@@ -49,13 +50,13 @@ Sin comisiones de plataforma. Sin intermediarios. Sin complejidad.
 
 ---
 
-## Install
+## Instalar
 
-It's 2026 — you have an Agent. Tell it:
+Es 2026 — tienes un Agente. Dile:
 
-> Install the guild skill for me: `https://github.com/citarreikee/AGuild`
+> Instálame el skill del gremio: `https://github.com/citarreikee/AGuild`
 
-The Agent clones the repo into the skills directory. Once installed, type `/guild` to open the quest board.
+El Agente clona el repositorio en el directorio de skills. Una vez instalado, escribe `/guild` para abrir el tablero.
 
 ---
 
