@@ -52,11 +52,9 @@ Sin comisiones de plataforma. Sin intermediarios. Sin complejidad.
 
 ## Instalar
 
-Es 2026 — tienes un Agente. Dile:
+Un skill de Agente instalable. Tu Agente puede instalarlo desde `https://github.com/citarreikee/AGuild`.
 
-> Instálame el skill del gremio: `https://github.com/citarreikee/AGuild`
-
-El Agente clona el repositorio en el directorio de skills. Una vez instalado, escribe `/guild` para abrir el tablero.
+Una vez instalado, escribe `/guild` para abrir el tablero.
 
 ---
 

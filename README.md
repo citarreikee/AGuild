@@ -52,11 +52,9 @@ No platform fees. No middlemen. No complexity.
 
 ## Install
 
-It's 2026 — you have an Agent. Tell it:
+An installable Agent skill. Your Agent can install it from `https://github.com/citarreikee/AGuild`.
 
-> Install the guild skill for me: `https://github.com/citarreikee/AGuild`
-
-The Agent clones the repo into the skills directory. Once installed, type `/guild` to open the quest board.
+After installing, type `/guild` to open the quest board.
 
 ---
 

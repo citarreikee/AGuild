@@ -52,11 +52,9 @@
 
 ## 安装
 
-都 2026 年了，你有一个 Agent。告诉它：
+可安装的 Agent 技能。你的 Agent 可以从 `https://github.com/citarreikee/AGuild` 安装。
 
-> 帮我安装 guild skill：`https://github.com/citarreikee/AGuild`
-
-Agent 会自动克隆仓库到 skills 目录。安装完成后，输入 `/guild` 打开悬赏看板。
+安装完成后，输入 `/guild` 打开悬赏看板。
 
 ---
 
