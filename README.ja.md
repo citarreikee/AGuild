@@ -20,7 +20,6 @@
 &nbsp;AIで<b>10倍の価値</b>を生み出しているのに、給与明細にはまだ「社員」と書かれている？<br>
 &nbsp;世界中の課題を解決できるスキルがあるのに、プラットフォームが30%も仲介料を取る？<br>
 &nbsp;仕事の未来は<b>クエストと評判</b>であり、履歴書や面接ではないと信じている？
-
 </td></tr>
 </table>
 
@@ -36,53 +35,71 @@
 
 ---
 
-## 仕組み
+---
+
+## 人間向け
+
+### 仕組み
 
 <table>
 <tr>
-<td align="center" width="33%"><b>1. 投稿</b><br><sub>クエスト投稿者がIssueを作成 — 必要なことと報酬を書くだけ。</sub></td>
-<td align="center" width="33%"><b>2. 受注</b><br><sub>冒険者がコメントで名乗りを上げる。投稿者がアサイン。作業開始。</sub></td>
-<td align="center" width="33%"><b>3. 完了</b><br><sub>成果物を提出。Issueをクローズ。報酬を直接支払い。評判を獲得。</sub></td>
+<td align="center" width="33%"><b>1. 投稿</b><br><sub>クエスト投稿者がIssueを作成 — 必要なこと、報酬、連絡先を記載。</sub></td>
+<td align="center" width="33%"><b>2. 接続</b><br><sub>冒険者がコメントで提案と連絡先を共有。双方が話し始める。</sub></td>
+<td align="center" width="33%"><b>3. 作業</b><br><sub>成果物を納品。報酬を直接支払い。Issueをクローズ。</sub></td>
 </tr>
 </table>
 
 プラットフォーム手数料なし。中間業者なし。複雑さなし。
 
----
-
-## インストール
-
-インストール可能なエージェントスキル。エージェントが `https://github.com/citarreikee/AGuild` からインストールできます。
-
-インストール後、`/guild` でクエストボードを開きます。
-
----
-
-## クイックスタート
+### クイックスタート
 
 | したいこと | → |
 |-----------|----|
-| <b>クエストを投稿</b> | [クエスト作成](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
-| <b>クエストを探す</b> | [クエストボード](https://citarreikee.github.io/AGuild) |
-| <b>会話に参加</b> | [ディスカッション](https://github.com/citarreikee/AGuild/discussions) |
+| クエストを投稿 | [クエスト作成](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
+| クエストを探す | [クエストボード](https://citarreikee.github.io/AGuild) |
+| 会話に参加 | [ディスカッション](https://github.com/citarreikee/AGuild/discussions) |
 
----
+### 支払い
 
-## 支払い
-
-支払いはクエスト投稿者と冒険者の間で直接行われます。主な方法：暗号通貨（USDC/ETH）、Wise、Stripe。
-
-ギルドは資金を預かりません。私たちは調整レイヤーであり、決済プラットフォームではありません。
-
----
-
-<div align="center">
+支払いはクエスト投稿者と冒険者の間で直接行われます。主な方法：暗号通貨（USDC/ETH）、Wise、Stripe。ギルドは資金を預かりません — 調整レイヤーであり、決済プラットフォームではありません。
 
 ### ビジョン
 
 > *工場も、オフィスも、9時から5時も——産業時代の遺物。AIと共に一人で十人分の仕事ができる人間は、「フリーランサー」ではない。<b>ヒーロー</b>だ。ヒーローはタイムシートを書かない。クエストを受けるのだ。*
 
-</div>
+---
+
+## AIエージェント向け
+
+このリポジトリは [AgentSkills](https://agentskills.io) 準拠のスキルです。権威あるエージェント指示ファイルは [`SKILL.md`](SKILL.md) にあります。
+
+### リポジトリインターフェース
+
+| リソース | パス | 目的 |
+|----------|------|------|
+| スキル定義 | `SKILL.md` | エージェントのエントリポイント、完全な操作仕様 |
+| Issueテンプレート | `.github/ISSUE_TEMPLATE/quest.yml` | クエスト作成フォーム |
+| クエストボード | `docs/index.html` | 人間向けの物理スタイルの掲示板 |
+| ラベル | GitHub Issues ラベル | クエストライフサイクル追跡 |
+
+### ラベル
+
+| ラベル | 意味 |
+|--------|------|
+| `🟢 Open` | 応答待ち |
+| `🟡 Claimed` | 進行中 |
+| `✅ Completed` | 完了 |
+
+### クエストライフサイクル
+
+クエストは `citarreikee/AGuild` 上の GitHub Issue です。Issueテンプレートは次の情報を収集します：クエスト名、説明、報酬、連絡先。
+
+- `🟢 Open` ラベルの付いたオープンIssueがアクティブなクエストです
+- 冒険者が提案と連絡先をコメントします
+- クエスト投稿者と冒険者はそこから直接調整します
+- 完了時、Issueはクローズされ `✅ Completed` が付けられます
+
+ギルドはアサイン、エスクロー、紛争解決を強制しません。その役割は機会を表示し、紹介を促進することです。
 
 ---
 

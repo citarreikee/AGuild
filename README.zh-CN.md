@@ -20,7 +20,6 @@
 &nbsp;你用 AI 交付了<b>十倍的价值</b>——但工资单上写的还是"员工"？<br>
 &nbsp;你的技能可以解决世界上的任何问题——但平台要抽 30% 才让你接活？<br>
 &nbsp;你相信未来的工作形式是<b>悬赏和声望</b>，而不是简历和面试？
-
 </td></tr>
 </table>
 
@@ -36,53 +35,71 @@
 
 ---
 
-## 工作流程
+---
+
+## 致人类
+
+### 运作方式
 
 <table>
 <tr>
-<td align="center" width="33%"><b>1. 发布</b><br><sub>金主创建一个 Issue，描述需求，标明赏金。仅此而已。</sub></td>
-<td align="center" width="33%"><b>2. 认领</b><br><sub>冒险家评论认领。金主指派任务。工作开始。</sub></td>
-<td align="center" width="33%"><b>3. 完成</b><br><sub>交付成果。关闭 Issue。赏金直接支付。声望积累。</sub></td>
+<td align="center" width="33%"><b>1. 发布</b><br><sub>金主创建一个 Issue，写明需求、赏金、联系方式。</sub></td>
+<td align="center" width="33%"><b>2. 连接</b><br><sub>冒险家评论留下方案和联系方式。双方开始沟通。</sub></td>
+<td align="center" width="33%"><b>3. 合作</b><br><sub>工作交付。赏金直接支付。Issue 关闭。</sub></td>
 </tr>
 </table>
 
 没有平台抽成。没有中间商。没有多余的东西。
 
----
-
-## 安装
-
-可安装的 Agent 技能。你的 Agent 可以从 `https://github.com/citarreikee/AGuild` 安装。
-
-安装完成后，输入 `/guild` 打开悬赏看板。
-
----
-
-## 快速开始
+### 快速开始
 
 | 我想… | → |
 |-------|----|
-| <b>发布悬赏</b> | [创建任务](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
-| <b>浏览任务</b> | [悬赏看板](https://citarreikee.github.io/AGuild) |
-| <b>加入讨论</b> | [讨论区](https://github.com/citarreikee/AGuild/discussions) |
+| 发布悬赏 | [创建任务](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
+| 浏览任务 | [悬赏看板](https://citarreikee.github.io/AGuild) |
+| 加入讨论 | [讨论区](https://github.com/citarreikee/AGuild/discussions) |
 
----
+### 支付
 
-## 支付
-
-支付由金主和冒险家直接完成。常用方式：加密货币（USDC/ETH）、Wise、Stripe。
-
-公会不托管资金。我们是一个协调层——不是支付平台。
-
----
-
-<div align="center">
+支付由金主和冒险家直接完成。常用方式：加密货币（USDC/ETH）、Wise、Stripe。公会不托管资金——它是一个协调层，不是支付平台。
 
 ### 愿景
 
 > *工厂、办公室、朝九晚五——工业时代的遗物。当一个卓越的人借助 AI 能完成十个人的工作时，他就不再是"自由职业者"。他是<b>英雄</b>。英雄不填工时表。他们接悬赏。*
 
-</div>
+---
+
+## 致 AI Agent
+
+此仓库是一个符合 [AgentSkills](https://agentskills.io) 标准的技能。权威的 Agent 指令文件是 [`SKILL.md`](SKILL.md)。
+
+### 仓库接口
+
+| 资源 | 路径 | 用途 |
+|------|------|------|
+| 技能定义 | `SKILL.md` | Agent 入口，完整交互规范 |
+| Issue 模板 | `.github/ISSUE_TEMPLATE/quest.yml` | 悬赏创建表单 |
+| 悬赏看板 | `docs/index.html` | 面向人类的任务表示板 |
+| 标签 | GitHub Issues 标签 | 悬赏生命周期追踪 |
+
+### 标签
+
+| 标签 | 含义 |
+|------|------|
+| `🟢 Open` | 等待响应 |
+| `🟡 Claimed` | 进行中 |
+| `✅ Completed` | 已完成 |
+
+### 悬赏生命周期
+
+悬赏是 `citarreikee/AGuild` 仓库中的 GitHub Issue。Issue 模板收集：任务名称、描述、赏金、联系方式。
+
+- 带有 `🟢 Open` 标签的开放 Issue 是活跃悬赏
+- 冒险家在 Issue 下评论，附上方案和联系方式
+- 金主和冒险家从那里直接对接
+- 完成后，Issue 关闭并标记为 `✅ Completed`
+
+公会不强制执行指派、托管或争议解决。它的角色是展示机会、促成接触。
 
 ---
 

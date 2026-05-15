@@ -20,7 +20,6 @@
 &nbsp;¿Entregas <b>10× más valor</b> con IA — pero tu recibo de sueldo aún dice "empleado"?<br>
 &nbsp;¿Tienes habilidades que el mundo necesita — pero las plataformas quieren el 30% solo por conectarte?<br>
 &nbsp;¿Crees que el futuro del trabajo son <b>misiones y reputación</b>, no currículums ni entrevistas?
-
 </td></tr>
 </table>
 
@@ -36,53 +35,71 @@
 
 ---
 
-## Cómo Funciona
+---
+
+## Para Humanos
+
+### Cómo Funciona
 
 <table>
 <tr>
-<td align="center" width="33%"><b>1. Publicar</b><br><sub>Un cliente abre un Issue — qué necesita, cuánto paga. Así de simple.</sub></td>
-<td align="center" width="33%"><b>2. Reclamar</b><br><sub>Un aventurero comenta para reclamar. El cliente lo asigna. Comienza el trabajo.</sub></td>
-<td align="center" width="33%"><b>3. Completar</b><br><sub>Trabajo entregado. Issue cerrado. Pago realizado directamente. Reputación ganada.</sub></td>
+<td align="center" width="33%"><b>1. Publicar</b><br><sub>Un cliente abre un Issue — qué necesita, cuánto paga, cómo contactarlo.</sub></td>
+<td align="center" width="33%"><b>2. Conectar</b><br><sub>Un aventurero comenta con su propuesta y contacto. Empiezan a hablar.</sub></td>
+<td align="center" width="33%"><b>3. Trabajar</b><br><sub>Trabajo entregado. Pago directo. Issue cerrado.</sub></td>
 </tr>
 </table>
 
 Sin comisiones de plataforma. Sin intermediarios. Sin complejidad.
 
----
-
-## Instalar
-
-Un skill de Agente instalable. Tu Agente puede instalarlo desde `https://github.com/citarreikee/AGuild`.
-
-Una vez instalado, escribe `/guild` para abrir el tablero.
-
----
-
-## Inicio Rápido
+### Inicio Rápido
 
 | Quiero… | → |
 |---------|----|
-| <b>Publicar una misión</b> | [Crear Misión](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
-| <b>Explorar misiones</b> | [Tablero](https://citarreikee.github.io/AGuild) |
-| <b>Unirme a la conversación</b> | [Discusiones](https://github.com/citarreikee/AGuild/discussions) |
+| Publicar una misión | [Crear Misión](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
+| Explorar misiones | [Tablero](https://citarreikee.github.io/AGuild) |
+| Unirme a la conversación | [Discusiones](https://github.com/citarreikee/AGuild/discussions) |
 
----
+### Pago
 
-## Pago
-
-El pago se realiza directamente entre el cliente y el aventurero. Métodos comunes: cripto (USDC/ETH), Wise, Stripe.
-
-El Gremio no retiene fondos. Somos una capa de coordinación — no una plataforma de pagos.
-
----
-
-<div align="center">
+El pago se realiza directamente entre el cliente y el aventurero. Métodos comunes: cripto (USDC/ETH), Wise, Stripe. El Gremio no retiene fondos — es una capa de coordinación, no una plataforma de pagos.
 
 ### La Visión
 
 > *La fábrica, la oficina, el horario de 9 a 5 — reliquias de la era industrial. Cuando una persona excepcional con IA puede hacer el trabajo de diez, no es un "freelancer". Es un <b>héroe</b>. Y los héroes no rellenan hojas de horas. Aceptan misiones.*
 
-</div>
+---
+
+## Para Agentes de IA
+
+Este repositorio es un skill compatible con [AgentSkills](https://agentskills.io). El archivo de instrucciones autoritativo para agentes es [`SKILL.md`](SKILL.md).
+
+### Superficie del Repositorio
+
+| Recurso | Ruta | Propósito |
+|---------|------|-----------|
+| Definición del skill | `SKILL.md` | Punto de entrada del agente, especificación completa |
+| Plantilla de Issue | `.github/ISSUE_TEMPLATE/quest.yml` | Formulario de creación de misiones |
+| Tablero | `docs/index.html` | Interfaz física para humanos |
+| Etiquetas | Etiquetas de GitHub Issues | Seguimiento del ciclo de vida |
+
+### Etiquetas
+
+| Etiqueta | Significado |
+|----------|-------------|
+| `🟢 Open` | Esperando respuesta |
+| `🟡 Claimed` | En progreso |
+| `✅ Completed` | Completado |
+
+### Ciclo de Vida de una Misión
+
+Una misión es un GitHub Issue en `citarreikee/AGuild`. La plantilla recopila: nombre, descripción, recompensa, contacto.
+
+- Issues abiertos con etiqueta `🟢 Open` son misiones activas
+- Un aventurero comenta con su propuesta y contacto
+- El cliente y el aventurero coordinan directamente desde ahí
+- Al completar, el Issue se cierra con `✅ Completed`
+
+El Gremio no impone asignación, custodia ni resolución de disputas. Su rol es mostrar oportunidades y facilitar presentaciones.
 
 ---
 
