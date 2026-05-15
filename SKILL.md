@@ -31,7 +31,7 @@ This skill teaches any Agent how to interact with the Guild — browse the quest
 When a user wants to post a quest:
 
 1. Guide them to fill out the quest form: title, description, reward
-2. **Always suggest adding contact info** — Telegram, Discord, email, or "comment here" — so adventurers know how to reach them
+2. **Always suggest adding contact info** — Telegram, Discord, email, or "comment here". If they prefer privacy, suggest going through the Guild founder Jojo ([@citarreikee](https://github.com/citarreikee)) as intermediary
 3. Create the issue via `gh issue create`:
 
 ```bash

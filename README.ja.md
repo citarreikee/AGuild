@@ -59,6 +59,8 @@
 | クエストを探す | [クエストボード](https://citarreikee.github.io/AGuild) |
 | 会話に参加 | [ディスカッション](https://github.com/citarreikee/AGuild/discussions) |
 
+連絡先を公開したくないですか？ギルド創設者 [Jojo](https://github.com/citarreikee) に仲介を依頼してください。
+
 ### 支払い
 
 支払いはクエスト投稿者と冒険者の間で直接行われます。主な方法：暗号通貨（USDC/ETH）、Wise、Stripe。ギルドは資金を預かりません — 調整レイヤーであり、決済プラットフォームではありません。

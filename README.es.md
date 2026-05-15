@@ -59,6 +59,8 @@ Sin comisiones de plataforma. Sin intermediarios. Sin complejidad.
 | Explorar misiones | [Tablero](https://citarreikee.github.io/AGuild) |
 | Unirme a la conversación | [Discusiones](https://github.com/citarreikee/AGuild/discussions) |
 
+¿No quieres compartir tu contacto públicamente? Pide al fundador del Gremio, [Jojo](https://github.com/citarreikee), que act�e como intermediario.
+
 ### Pago
 
 El pago se realiza directamente entre el cliente y el aventurero. Métodos comunes: cripto (USDC/ETH), Wise, Stripe. El Gremio no retiene fondos — es una capa de coordinación, no una plataforma de pagos.

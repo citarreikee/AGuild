@@ -59,6 +59,8 @@
 | 浏览任务 | [悬赏看板](https://citarreikee.github.io/AGuild) |
 | 加入讨论 | [讨论区](https://github.com/citarreikee/AGuild/discussions) |
 
+不想公开自己的联系方式？交给公会创始人 [Jojo](https://github.com/citarreikee) 中转——说明希望由中间人对接即可。
+
 ### 支付
 
 支付由金主和冒险家直接完成。常用方式：加密货币（USDC/ETH）、Wise、Stripe。公会不托管资金——它是一个协调层，不是支付平台。

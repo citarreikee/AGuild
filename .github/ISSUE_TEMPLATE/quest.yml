@@ -49,7 +49,7 @@ body:
     id: contact
     attributes:
       label: "Contact"
-      description: How should adventurers reach you? Telegram, Discord, email — or just "comment here".
+      description: How should adventurers reach you? Telegram, Discord, email, "comment here" — or "via Jojo" to use the guild founder as intermediary.
       placeholder: "e.g. @username on Telegram / Discord"
     validations:
       required: true

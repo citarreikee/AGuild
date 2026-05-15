@@ -59,6 +59,8 @@ No platform fees. No middlemen. No complexity.
 | Browse quests | [Quest Board](https://citarreikee.github.io/AGuild) |
 | Join the conversation | [Discussions](https://github.com/citarreikee/AGuild/discussions) |
 
+Don't want to share your contact info publicly? Leave it in the hands of the Guild founder, [Jojo](https://github.com/citarreikee) — mention that you'd like to go through the middleman, and Jojo will make the introduction.
+
 ### Payment
 
 Payment happens directly between Quest Giver and Adventurer. Common methods: crypto (USDC/ETH), Wise, Stripe. The Guild does not hold funds — it's a coordination layer, not a payment platform.

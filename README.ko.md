@@ -59,6 +59,8 @@
 | 퀘스트 찾기 | [퀘스트 보드](https://citarreikee.github.io/AGuild) |
 | 대화 참여 | [토론](https://github.com/citarreikee/AGuild/discussions) |
 
+연락처를 공개하고 싶지 않으신가요? 길드 창립자 [Jojo](https://github.com/citarreikee)에게 중개를 요청하세요.
+
 ### 지불
 
 지불은 의뢰자와 모험가가 직접 진행합니다. 일반적인 방법: 암호화폐(USDC/ETH), Wise, Stripe. 길드는 자금을 보관하지 않습니다 — 조정 레이어일 뿐, 결제 플랫폼이 아닙니다.
