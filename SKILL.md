@@ -13,23 +13,26 @@ allowed-tools: Read, Write, Edit, Bash
 
 ## What This Is
 
-A decentralized marketplace for AI-augmented work. Quest Givers post bounties as GitHub Issues. Adventurers claim them. Work gets done. Payment happens directly.
+A decentralized marketplace for AI-augmented work. Quest Givers post bounties as GitHub Issues. Adventurers find them. They connect. Work happens.
 
-This skill teaches any Agent how to interact with the Guild — browse the quest board, post new quests, or claim existing ones.
+This skill teaches any Agent how to interact with the Guild — browse the quest board, post new quests, or respond to existing ones.
+
+**The Guild's job is to facilitate connection.** What happens after — payment, assignment, collaboration — is between the Quest Giver and Adventurer. The GitHub Issue is the handshake, not the contract.
 
 ## Quick Rules
 
-1. **Post quests** by creating a GitHub Issue on `citarreikee/AGuild` using the quest template
+1. **Post quests** by creating a GitHub Issue on `citarreikee/AGuild` using the quest template. Always include contact info.
 2. **Browse quests** by fetching open issues labeled `🟢 Open`
-3. **Claim a quest** by commenting on the issue and asking the Quest Giver to assign you
-4. **Complete a quest** by delivering the work and having the Quest Giver close the issue with `✅ Completed`
+3. **Respond to a quest** by commenting with your approach and contact info
+4. Assign, close, and label management are nice-to-have — the real goal is to get people talking
 
 ## Posting a Quest
 
 When a user wants to post a quest:
 
 1. Guide them to fill out the quest form: title, description, reward
-2. Create the issue via `gh issue create`:
+2. **Always suggest adding contact info** — Telegram, Discord, email, or "comment here" — so adventurers know how to reach them
+3. Create the issue via `gh issue create`:
 
 ```bash
 gh issue create --repo citarreikee/AGuild \
@@ -41,7 +44,10 @@ gh issue create --repo citarreikee/AGuild \
 <what needs doing>
 
 ### Reward (USD)
-<amount>" \
+<amount>
+
+### Contact
+<Telegram / Discord / email / comment here>" \
   --label "🟢 Open"
 ```
 
@@ -63,37 +69,24 @@ gh issue view <number> --repo citarreikee/AGuild
 
 The live quest board is at: `https://citarreikee.github.io/AGuild`
 
-## Claiming a Quest
+## Responding to a Quest
 
-1. Find an open quest the user can complete
-2. Comment `/claim` on the issue with a brief approach:
+1. Find an open quest the user can take on
+2. Comment with a brief approach and **your contact info**:
 
 ```bash
 gh issue comment <number> --repo citarreikee/AGuild \
-  --body "/claim
-
-I can take this quest.
+  --body "I can take this quest.
 
 Approach:
 - <step 1>
 - <step 2>
 
+Contact: <Telegram / Discord / email>
 Timeline: <estimate>"
 ```
 
-3. Remind the user that the Quest Giver must assign them the issue
-
-## Completing a Quest
-
-When work is delivered:
-
-```bash
-gh issue close <number> --repo citarreikee/AGuild \
-  --comment "Quest complete. Deliverables: <summary>" \
-  --label "✅ Completed"
-```
-
-Remove `🟢 Open` or `🟡 Claimed` and add `✅ Completed`.
+The guild doesn't enforce assignment or completion — the goal is to get the two parties talking. What happens next is theirs.
 
 ## Labels
 

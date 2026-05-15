@@ -8,7 +8,7 @@ body:
       value: |
         ## Post a Quest to the Guild Board
 
-        Describe what needs doing and what you'll pay. Be specific — better quests attract better adventurers.
+        Describe what needs doing, how you'll pay, and how to reach you. The goal is to get people talking — the rest is between you.
 
   - type: input
     id: quest-title
@@ -41,8 +41,15 @@ body:
   - type: input
     id: reward
     attributes:
-      label: "💰 Reward (USD)"
-      description: How much will you pay for a completed quest?
+      label: "Reward (USD)"
+      description: How much will you pay for a completed quest? (Optional — put TBD if unsure)
       placeholder: "e.g. 500"
+
+  - type: input
+    id: contact
+    attributes:
+      label: "Contact"
+      description: How should adventurers reach you? Telegram, Discord, email — or just "comment here".
+      placeholder: "e.g. @username on Telegram / Discord"
     validations:
       required: true
