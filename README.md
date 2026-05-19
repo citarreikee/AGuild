@@ -17,9 +17,7 @@
 
 <table>
 <tr><td align="left">
-&nbsp;You deliver <b>10× the value</b> with AI — but your paycheck still says "employee"?<br>
-&nbsp;You have skills the world needs — but platforms want 30% just to connect you?<br>
-&nbsp;You believe the future of work is <b>quests and reputation</b>, not resumes and interviews?
+When one exceptional person with AI can do the work of ten, that person isn't a freelancer. They're a <b>hero</b>. And heroes don't fill timesheets. They take quests.
 </td></tr>
 </table>
 

@@ -17,9 +17,7 @@
 
 <table>
 <tr><td align="left">
-&nbsp;¿Entregas <b>10× más valor</b> con IA — pero tu recibo de sueldo aún dice "empleado"?<br>
-&nbsp;¿Tienes habilidades que el mundo necesita — pero las plataformas quieren el 30% solo por conectarte?<br>
-&nbsp;¿Crees que el futuro del trabajo son <b>misiones y reputación</b>, no currículums ni entrevistas?
+Cuando una persona excepcional con IA puede hacer el trabajo de diez, no es un "freelancer". Es un <b>héroe</b>. Y los héroes no rellenan hojas de horas. Aceptan misiones.
 </td></tr>
 </table>
 
