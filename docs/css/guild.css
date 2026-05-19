@@ -318,6 +318,48 @@ body::after {
 .btn-secondary { background: transparent; border: 1px solid var(--ink-light); color: var(--ink-faded); }
 .btn-secondary:hover { border-color: var(--ink); color: var(--ink); }
 
+/* ---- Comments ---- */
+.modal__comments {
+  padding: 0 1.5rem 0.5rem;
+}
+
+.comment {
+  padding: 0.65rem 0;
+  border-bottom: 1px dashed rgba(139,90,43,0.15);
+}
+
+.comment:last-child { border-bottom: none; }
+
+.comment__header {
+  display: flex; align-items: center; gap: 0.45rem;
+  margin-bottom: 0.35rem;
+}
+
+.comment__avatar {
+  width: 22px; height: 22px; border-radius: 50%;
+  border: 1px solid rgba(139,90,43,0.2);
+}
+
+.comment__user {
+  font-family: var(--font-display); font-size: 0.75rem;
+  color: var(--ink); letter-spacing: 0.03em;
+}
+
+.comment__date {
+  font-size: 0.65rem; color: var(--ink-light); font-style: italic;
+}
+
+.comment__body {
+  font-size: 0.85rem; color: var(--ink-faded); line-height: 1.5;
+  white-space: pre-wrap;
+  padding-left: 1.65rem;
+}
+
+.comments-empty {
+  text-align: center; padding: 0.75rem 0;
+  color: var(--ink-light); font-style: italic; font-size: 0.8rem;
+}
+
 /* ---- Error Toast ---- */
 .error-toast {
   position: fixed; bottom: 1.5rem; left: 50%; transform: translateX(-50%);

@@ -61,7 +61,7 @@ const App = (() => {
     </div>`;
   }
 
-  function showQuestDetail(id) {
+  async function showQuestDetail(id) {
     const q = allQuests.find(q => q.id === Number(id));
     if (!q) return;
     const st = { open:'Open', claimed:'Claimed', completed:'Completed' }[q.status] || 'Open';
@@ -79,9 +79,12 @@ const App = (() => {
         <button class="modal__close">&times;</button>
       </div>
       <div class="modal__body">${q.body ? escapeHTML(q.body) : '<p style="color:var(--ink-light);">No details inscribed.</p>'}</div>
+      <div class="modal__comments" id="modal-comments">
+        <div class="loading"><div class="loading__spinner"></div></div>
+      </div>
       <div class="modal__actions">
         <a href="${q.url}" target="_blank" rel="noopener" class="btn btn-primary">View on GitHub</a>
-        ${q.status === 'open' ? `<a href="${q.url}" target="_blank" rel="noopener" class="btn btn-secondary">Claim Quest</a>` : ''}
+        ${q.status === 'open' ? `<a href="${q.url}" target="_blank" rel="noopener" class="btn btn-secondary">Reply on GitHub</a>` : ''}
       </div>
     </div>`;
     document.body.appendChild(overlay);
@@ -90,6 +93,33 @@ const App = (() => {
     overlay.querySelector('.modal__close').addEventListener('click', close);
     overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
     document.addEventListener('keydown', function esc(e) { if (e.key === 'Escape') { close(); document.removeEventListener('keydown', esc); } });
+
+    // Fetch and render comments
+    loadComments(q.id);
+  }
+
+  async function loadComments(issueId) {
+    const container = document.getElementById('modal-comments');
+    if (!container) return;
+    try {
+      const comments = await GuildAPI.fetchComments(issueId);
+      if (!comments.length) {
+        container.innerHTML = '<div class="comments-empty">No responses yet. Be the first.</div>';
+        return;
+      }
+      container.innerHTML = comments.map(c => `
+        <div class="comment">
+          <div class="comment__header">
+            <img class="comment__avatar" src="${c.user.avatar_url}&s=40" alt="${c.user.login}" loading="lazy">
+            <span class="comment__user">${escapeHTML(c.user.login)}</span>
+            <span class="comment__date">${new Date(c.created_at).toLocaleDateString('en-US', { month:'short', day:'numeric' })}</span>
+          </div>
+          <div class="comment__body">${escapeHTML(c.body)}</div>
+        </div>
+      `).join('');
+    } catch (err) {
+      container.innerHTML = '<div class="comments-empty">Could not load replies.</div>';
+    }
   }
 
   function escapeHTML(s) { const d = document.createElement('div'); d.textContent = s; return d.innerHTML; }

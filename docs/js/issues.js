@@ -88,5 +88,11 @@ const GuildAPI = (() => {
     };
   }
 
-  return { fetchIssues, normalizeIssue, REPO_OWNER: OWNER, REPO_NAME: REPO };
+  async function fetchComments(issueNumber) {
+    const res = await fetch(`${ISSUES_URL}/${issueNumber}/comments?per_page=50`);
+    if (!res.ok) throw new Error(`GitHub API error: ${res.status}`);
+    return await res.json();
+  }
+
+  return { fetchIssues, fetchComments, normalizeIssue, REPO_OWNER: OWNER, REPO_NAME: REPO };
 })();
