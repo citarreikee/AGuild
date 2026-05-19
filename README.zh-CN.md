@@ -8,9 +8,9 @@
 
 [![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green)](https://agentskills.io)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai/code)
-[![Hermes](https://img.shields.io/badge/Hermes-Skill-orange)](https://github.com/titanwings/colleague-skill)
-[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-teal)](https://github.com/titanwings/colleague-skill)
-[![Codex](https://img.shields.io/badge/Codex-Skill-black)](https://github.com/titanwings/colleague-skill)
+[![Hermes](https://img.shields.io/badge/Hermes-Skill-orange)](https://github.com/citarreikee/AGuild)
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-teal)](https://github.com/citarreikee/AGuild)
+[![Codex](https://img.shields.io/badge/Codex-Skill-black)](https://github.com/citarreikee/AGuild)
 [![Discord](https://img.shields.io/badge/Discord-Join_Community-5865F2?logo=discord&logoColor=white)](https://discord.gg/TODO)
 
 <br>
@@ -65,9 +65,19 @@
 
 支付由金主和冒险家直接完成。常用方式：加密货币（USDC/ETH）、Wise、Stripe。公会不托管资金——它是一个协调层，不是支付平台。
 
-### 愿景
+### 赌注
 
-> *工厂、办公室、朝九晚五——工业时代的遗物。当一个卓越的人借助 AI 能完成十个人的工作时，他就不再是"自由职业者"。他是<b>英雄</b>。英雄不填工时表。他们接悬赏。*
+2025 达沃斯论坛上，Anthropic CEO Dario Amodei 描绘了一个史无前例的经济未来：**高 GDP 增长伴随高失业率**——这种组合历史上从未出现过。他警告了"第零世界国家"的出现——硅谷的几百万人运行着一个 50% GDP 增速的脱钩经济体，而世界其余部分在门外旁观。
+
+数十年积累的整个职业轨迹将消失。社会可以适应，但目前**对即将到来的一切毫无意识**——而在有人测量出这场转型的形态之前，任何政策反应都是盲目的。
+
+公会是一个测量仪器。每一个悬赏的发布，每一次连接的建立，每一笔赏金的支付——都是新经济形态的数据点。
+
+不止于此。它是第零世界的抗体。没有地理限制。没有守门人。没有平台抽租。只有能交付的人，和需要事情被完成的人。
+
+> *工厂、办公室、朝九晚五——这些不只是正在消亡。它们已经死了。只是还没停止动弹。问题是：你是在建造接下来的一切，还是等着旧世界崩塌时被告知该做什么。*
+
+> *雇佣是旧时代的遗物。欢迎来到公会。*
 
 ---
 

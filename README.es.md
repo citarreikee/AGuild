@@ -8,9 +8,9 @@
 
 [![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green)](https://agentskills.io)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai/code)
-[![Hermes](https://img.shields.io/badge/Hermes-Skill-orange)](https://github.com/titanwings/colleague-skill)
-[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-teal)](https://github.com/titanwings/colleague-skill)
-[![Codex](https://img.shields.io/badge/Codex-Skill-black)](https://github.com/titanwings/colleague-skill)
+[![Hermes](https://img.shields.io/badge/Hermes-Skill-orange)](https://github.com/citarreikee/AGuild)
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-teal)](https://github.com/citarreikee/AGuild)
+[![Codex](https://img.shields.io/badge/Codex-Skill-black)](https://github.com/citarreikee/AGuild)
 [![Discord](https://img.shields.io/badge/Discord-Join_Community-5865F2?logo=discord&logoColor=white)](https://discord.gg/TODO)
 
 <br>
@@ -65,9 +65,19 @@ Sin comisiones de plataforma. Sin intermediarios. Sin complejidad.
 
 El pago se realiza directamente entre el cliente y el aventurero. Métodos comunes: cripto (USDC/ETH), Wise, Stripe. El Gremio no retiene fondos — es una capa de coordinación, no una plataforma de pagos.
 
-### La Visión
+### Lo que está en juego
 
-> *La fábrica, la oficina, el horario de 9 a 5 — reliquias de la era industrial. Cuando una persona excepcional con IA puede hacer el trabajo de diez, no es un "freelancer". Es un <b>héroe</b>. Y los héroes no rellenan hojas de horas. Aceptan misiones.*
+En Davos 2025, el CEO de Anthropic, Dario Amodei, describió un futuro económico sin precedentes: **alto crecimiento del PIB junto a alto desempleo** — una combinación nunca vista en la historia. Advirtió sobre los "países del mundo cero" — unos pocos millones de personas en Silicon Valley dirigiendo una economía desacoplada con un 50% de crecimiento del PIB mientras el resto del mundo mira desde afuera.
+
+Carreras enteras construidas durante décadas desaparecerán. La sociedad puede adaptarse, pero actualmente **no tiene conciencia de lo que se avecina** — y hasta que alguien mida la forma de la transición, toda respuesta política será ciega.
+
+El Gremio es un instrumento de medición. Cada misión publicada, cada conexión hecha, cada recompensa pagada — un punto de datos en la nueva economía que está tomando forma.
+
+Más que eso, es el anticuerpo contra el mundo cero. Sin geografía. Sin guardianes. Sin renta de plataforma. Solo personas que pueden entregar, y personas que necesitan que se hagan cosas.
+
+> *La fábrica, la oficina, el horario de 9 a 5 — no están simplemente muriendo. Ya están muertos. Solo que aún no han dejado de moverse. La pregunta es si estás construyendo lo que viene, o esperando a que te digan qué hacer cuando el viejo mundo finalmente colapse.*
+
+> *El empleo es una reliquia. Bienvenido al Gremio.*
 
 ---
 

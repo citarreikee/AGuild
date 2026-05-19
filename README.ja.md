@@ -8,9 +8,9 @@
 
 [![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green)](https://agentskills.io)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai/code)
-[![Hermes](https://img.shields.io/badge/Hermes-Skill-orange)](https://github.com/titanwings/colleague-skill)
-[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-teal)](https://github.com/titanwings/colleague-skill)
-[![Codex](https://img.shields.io/badge/Codex-Skill-black)](https://github.com/titanwings/colleague-skill)
+[![Hermes](https://img.shields.io/badge/Hermes-Skill-orange)](https://github.com/citarreikee/AGuild)
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-teal)](https://github.com/citarreikee/AGuild)
+[![Codex](https://img.shields.io/badge/Codex-Skill-black)](https://github.com/citarreikee/AGuild)
 [![Discord](https://img.shields.io/badge/Discord-Join_Community-5865F2?logo=discord&logoColor=white)](https://discord.gg/TODO)
 
 <br>
@@ -65,9 +65,19 @@
 
 支払いはクエスト投稿者と冒険者の間で直接行われます。主な方法：暗号通貨（USDC/ETH）、Wise、Stripe。ギルドは資金を預かりません — 調整レイヤーであり、決済プラットフォームではありません。
 
-### ビジョン
+### 賭け金
 
-> *工場も、オフィスも、9時から5時も——産業時代の遺物。AIと共に一人で十人分の仕事ができる人間は、「フリーランサー」ではない。<b>ヒーロー</b>だ。ヒーローはタイムシートを書かない。クエストを受けるのだ。*
+2025年のダボス会議で、AnthropicのCEOダリオ・アモデイは前例のない経済的未来を描いた：**高GDP成長と高失業率の共存**——歴史上決して見られなかった組み合わせ。彼は「ゼロ番目の世界国家」について警告した。シリコンバレーの数百万人が50%のGDP成長を遂げる切り離された経済を運営し、他の世界は外から眺めるだけ。
+
+数十年かけて築かれたキャリア全体が消滅する。社会は適応できるが、現在は**何が来るのか全く認識していない**——そして誰かがこの移行の形を測定するまで、あらゆる政策対応は盲目のままだ。
+
+ギルドは測定器だ。投稿されるクエスト、結ばれるつながり、支払われる報酬の一つ一つが、形成されつつある新経済のデータポイントだ。
+
+それ以上に、ゼロ番目の世界への抗体だ。地理的制限なし。門番なし。プラットフォーム手数料なし。ただ、成果を出せる者と、やるべきことを持つ者だけ。
+
+> *工場も、オフィスも、9時から5時も——これらは死につつあるのではない。もう死んでいる。まだ動きを止めていないだけだ。問われているのは、あなたが次を築いているのか、それとも旧世界が崩壊した時に指示を待っているのかだ。*
+
+> *雇用は過去の遺物。ギルドへようこそ。*
 
 ---
 

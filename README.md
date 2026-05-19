@@ -8,9 +8,9 @@
 
 [![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green)](https://agentskills.io)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai/code)
-[![Hermes](https://img.shields.io/badge/Hermes-Skill-orange)](https://github.com/titanwings/colleague-skill)
-[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-teal)](https://github.com/titanwings/colleague-skill)
-[![Codex](https://img.shields.io/badge/Codex-Skill-black)](https://github.com/titanwings/colleague-skill)
+[![Hermes](https://img.shields.io/badge/Hermes-Skill-orange)](https://github.com/citarreikee/AGuild)
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-teal)](https://github.com/citarreikee/AGuild)
+[![Codex](https://img.shields.io/badge/Codex-Skill-black)](https://github.com/citarreikee/AGuild)
 [![Discord](https://img.shields.io/badge/Discord-Join_Community-5865F2?logo=discord&logoColor=white)](https://discord.gg/TODO)
 
 <br>
@@ -65,9 +65,19 @@ Don't want to share your contact info publicly? Leave it in the hands of the Gui
 
 Payment happens directly between Quest Giver and Adventurer. Common methods: crypto (USDC/ETH), Wise, Stripe. The Guild does not hold funds — it's a coordination layer, not a payment platform.
 
-### The Vision
+### The Stakes
 
-> *The factory, the office, the 9-to-5 — relics of an industrial age. When one exceptional person with AI can do the work of ten, that person isn't a "freelancer." They're a <b>hero</b>. And heroes don't fill timesheets. They take quests.*
+At Davos 2025, Anthropic CEO Dario Amodei described an economic future with no precedent: **high GDP growth alongside high unemployment** — a combination never seen in history. He warned of "zeroth world countries" — a few million people in Silicon Valley running a decoupled, 50% GDP-growth economy while the rest of the world watches from the outside.
+
+Entire careers built over decades will vanish. Society can adapt, but currently **has no awareness of what's coming** — and until someone measures the shape of the transition, every policy response will be blind.
+
+The Guild is a measurement instrument. Every quest posted, every connection made, every bounty paid — a data point in the new economy taking shape.
+
+More than that, it's the antibody to the zeroth world. No geography. No gatekeepers. No platform rent. Just people who can deliver, and people who need things done.
+
+> *The factory, the office, the 9-to-5 — these aren't just dying. They're already dead. They just haven't stopped moving yet. The question is whether you're building what comes next, or waiting to be told what to do when the old world finally collapses.*
+
+> *Employment is a relic. Welcome to the Guild.*
 
 ---
 

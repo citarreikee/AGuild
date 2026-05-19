@@ -8,9 +8,9 @@
 
 [![AgentSkills](https://img.shields.io/badge/AgentSkills-Standard-green)](https://agentskills.io)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai/code)
-[![Hermes](https://img.shields.io/badge/Hermes-Skill-orange)](https://github.com/titanwings/colleague-skill)
-[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-teal)](https://github.com/titanwings/colleague-skill)
-[![Codex](https://img.shields.io/badge/Codex-Skill-black)](https://github.com/titanwings/colleague-skill)
+[![Hermes](https://img.shields.io/badge/Hermes-Skill-orange)](https://github.com/citarreikee/AGuild)
+[![OpenClaw](https://img.shields.io/badge/OpenClaw-Skill-teal)](https://github.com/citarreikee/AGuild)
+[![Codex](https://img.shields.io/badge/Codex-Skill-black)](https://github.com/citarreikee/AGuild)
 [![Discord](https://img.shields.io/badge/Discord-Join_Community-5865F2?logo=discord&logoColor=white)](https://discord.gg/TODO)
 
 <br>
@@ -65,9 +65,19 @@
 
 지불은 의뢰자와 모험가가 직접 진행합니다. 일반적인 방법: 암호화폐(USDC/ETH), Wise, Stripe. 길드는 자금을 보관하지 않습니다 — 조정 레이어일 뿐, 결제 플랫폼이 아닙니다.
 
-### 비전
+### 판돈
 
-> *공장, 사무실, 9-to-5 — 산업 시대의 유물. AI와 함께 열 사람 몫을 해내는 사람은 "프리랜서"가 아닙니다. 그들은 <b>영웅</b>입니다. 영웅은 근무 시간표를 작성하지 않습니다. 퀘스트를 수락할 뿐입니다.*
+2025년 다보스에서 Anthropic CEO 다리오 아모데이는 역사상 전례 없는 경제적 미래를 그렸다: **높은 GDP 성장과 높은 실업률의 공존** — 역사상 한 번도 본 적 없는 조합. 그는 "제0세계 국가"에 대해 경고했다 — 실리콘밸리의 수백만 명이 50% GDP 성장을 하는 분리된 경제를 운영하는 동안, 나머지 세계는 문 밖에서 구경만 한다.
+
+수십 년에 걸쳐 쌓아올린 경력 전체가 사라질 것이다. 사회는 적응할 수 있지만, 현재는 **무엇이 다가오는지 전혀 인식하지 못하고 있다**. 누군가 이 전환의 형태를 측정하기 전까지는 모든 정책 대응은 눈먼 상태다.
+
+길드는 측정 도구다. 게시되는 모든 퀘스트, 연결되는 모든 관계, 지급되는 모든 보상이 형성 중인 새로운 경제의 데이터 포인트다.
+
+그 이상으로, 제0세계에 대한 항체다. 지리적 제한도, 문지기도, 플랫폼 임대료도 없다. 오직 결과를 낼 수 있는 사람과, 해결해야 할 일을 가진 사람뿐.
+
+> *공장도, 사무실도, 9-to-5도 — 이것들은 죽어가고 있는 게 아니다. 이미 죽었다. 단지 아직 움직임을 멈추지 않았을 뿐이다. 질문은 당신이 다음을 짓고 있는가, 아니면 옛 세상이 무너질 때 지시를 기다리고 있는가이다.*
+
+> *고용은 과거의 유물. 길드에 오신 것을 환영합니다.*
 
 ---
 
