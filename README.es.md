@@ -17,7 +17,7 @@
 
 <table>
 <tr><td align="left">
-Cuando una persona excepcional con IA puede hacer el trabajo de diez, no es un "freelancer". Es un <b>héroe</b>. Y los héroes no rellenan hojas de horas. Aceptan misiones.
+Cuando una persona excepcional con IA puede hacer el trabajo de diez,<br>no es un "freelancer". Es un <b>héroe</b>.<br>Y los héroes no rellenan hojas de horas. Aceptan misiones.
 </td></tr>
 </table>
 

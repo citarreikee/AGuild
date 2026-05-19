@@ -17,7 +17,7 @@
 
 <table>
 <tr><td align="left">
-When one exceptional person with AI can do the work of ten, that person isn't a freelancer. They're a <b>hero</b>. And heroes don't fill timesheets. They take quests.
+When one exceptional person with AI can do the work of ten,<br>that person isn't a freelancer. They're a <b>hero</b>.<br>And heroes don't fill timesheets. They take quests.
 </td></tr>
 </table>
 
