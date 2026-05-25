@@ -37,27 +37,40 @@ When one exceptional person with AI can do the work of ten,<br>that person isn't
 
 ## For Humans
 
-### How It Works
+### How the Guild Works
+
+Some quests are meant for a lone blade. Others demand a party.
+
+The Guild doesn't care which you choose. Post a quest, and anyone may answer. But the real magic happens when adventurers who've fought alongside each other before come together — a rogue who handles the data, a mage who writes the models, a knight who ships the code. They already know each other's rhythm. They've cleared dungeons before.
+
+Not every party needs to last forever. Some form for one quest and disband at the tavern door. Others stay together across a dozen campaigns. The Guild doesn't distinguish — it simply records who showed up, who delivered, and who can be trusted again.
 
 <table>
 <tr>
-<td align="center" width="33%"><b>1. Post</b><br><sub>A Quest Giver opens an issue — what needs doing, what it pays, how to reach them.</sub></td>
-<td align="center" width="33%"><b>2. Connect</b><br><sub>An adventurer comments with their approach and contact info. They start talking.</sub></td>
-<td align="center" width="33%"><b>3. Work</b><br><sub>Work delivered. Reward paid directly between them. Issue closed.</sub></td>
+<td align="center" width="25%"><b>1. Post a Quest</b><br><sub>A Quest Giver nails a parchment to the board — what needs doing, what it pays, how to reach them.</sub></td>
+<td align="center" width="25%"><b>2. Answer the Call</b><br><sub>An adventurer comments. Or a party of three. They bring their approach, their contact, their reputation.</sub></td>
+<td align="center" width="25%"><b>3. Deliver</b><br><sub>Work happens. No timesheets. No standups. No one asking for progress reports. Just the quest and the deliverable.</sub></td>
+<td align="center" width="25%"><b>4. Repeat</b><br><sub>Reward paid directly. Issue closed. Reputation earned. The party stays together or rides separate ways.</sub></td>
 </tr>
 </table>
 
-No platform fees. No middlemen. No complexity.
+No platform fee. No middleman. No boss.
+
+### Form Your Party
+
+Don't want to quest alone? Look at who's completed similar bounties — they're your future party members. Comment together on the same quest. The Guild remembers who works well with whom.
+
+A party of three specialists can do what a department of thirty does, minus the meetings.
 
 ### Quick Start
 
 | I want to… | → |
 |------------|----|
 | Post a quest | [Create Quest](https://github.com/citarreikee/AGuild/issues/new?template=quest.yml) |
-| Browse quests | [Quest Board](https://citarreikee.github.io/AGuild) |
-| Join the conversation | [Discussions](https://github.com/citarreikee/AGuild/discussions) |
+| Browse the board | [Quest Board](https://citarreikee.github.io/AGuild) |
+| Gather in the tavern | [Discussions](https://github.com/citarreikee/AGuild/discussions) |
 
-Don't want to share your contact info publicly? Leave it in the hands of the Guild founder, [Jojo](https://github.com/citarreikee) — mention that you'd like to go through the middleman, and Jojo will make the introduction.
+Don't want to share your contact publicly? Leave it in the hands of the Guild founder, [Jojo](https://github.com/citarreikee) — mention that you'd like to go through the middleman, and Jojo will make the introduction.
 
 ### Payment
 

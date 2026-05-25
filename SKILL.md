@@ -13,11 +13,11 @@ allowed-tools: Read, Write, Edit, Bash
 
 ## What This Is
 
-A decentralized marketplace for AI-augmented work. Quest Givers post bounties as GitHub Issues. Adventurers find them. They connect. Work happens.
+A decentralized quest board for AI-augmented workers. Quest Givers post bounties as GitHub Issues. Adventurers find them — alone or in parties. They connect. Work happens. No bosses. No timesheets. No org charts.
 
-This skill teaches any Agent how to interact with the Guild — browse the quest board, post new quests, or respond to existing ones.
+This skill teaches any Agent how to interact with the Guild — browse the quest board, post new quests, respond to existing ones, or help form adventuring parties.
 
-**The Guild's job is to facilitate connection.** What happens after — payment, assignment, collaboration — is between the Quest Giver and Adventurer. The GitHub Issue is the handshake, not the contract.
+**The Guild's job is to facilitate connection.** A quest might need one blade or three. The GitHub Issue is the handshake, not the contract.
 
 ## Quick Rules
 
@@ -86,7 +86,32 @@ Contact: <Telegram / Discord / email>
 Timeline: <estimate>"
 ```
 
-The guild doesn't enforce assignment or completion — the goal is to get the two parties talking. What happens next is theirs.
+The guild doesn't enforce assignment or completion — the goal is to get people talking. What happens next is theirs.
+
+## Forming a Party
+
+Some quests need more than one set of hands. The Guild was built for parties — small, lean teams that form around a quest and disband when it's done, or stay together across campaigns.
+
+When a user wants to quest with others:
+
+1. **Check past quests.** Look at who's completed similar bounties — the Guild's public record shows who delivered, with whom, and how often.
+2. **Invite on the issue.** Multiple adventurers can comment on the same quest with a shared approach. Tag your party members.
+3. **Each adventurer notes their role.** One handles the data, one writes the models, one ships the code. A party of three specialists can do what a department of thirty does.
+
+```bash
+gh issue comment <number> --repo citarreikee/AGuild \
+  --body "A party of three, taking this quest together.
+
+@mage - models & training
+@rogue - data pipeline & scraping
+@knight - deployment & shipping
+
+We've quested together before. Contact: <Telegram / Discord>"
+```
+
+When recommending a quest to a user, ask whether they have the full skill set. If not, suggest they find party members — the Guild's completed quests history shows who might be a fit.
+
+Parties need no charter. No registration. No approval. The Guild only tracks one thing: who shows up and delivers.
 
 ## Labels
 
