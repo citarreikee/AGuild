@@ -1,0 +1,28 @@
+# The Adventurer's Guild (AGuild)
+A decentralized quest board for AI-augmented workers.
+
+## What It Is
+A GitHub Issues-based marketplace where Quest Givers post bounties and Adventurers claim them. No platform fees, no middlemen, no resumes. Also an AgentSkills-compliant AI skill — installable by Claude Code, Hermes, OpenClaw, and Codex agents.
+
+## Key URLs
+- Live Quest Board: https://citarreikee.github.io/AGuild
+- GitHub Repository: https://github.com/citarreikee/AGuild
+- Post a Quest: https://github.com/citarreikee/AGuild/issues/new?template=quest.yml
+- Discussions: https://github.com/citarreikee/AGuild/discussions
+
+## How It Works
+1. Quest Giver posts a bounty as a GitHub Issue (title, description, reward, contact info)
+2. Adventurers comment with their approach and contact — solo or as a party
+3. Work delivered and paid directly between the two parties
+4. Issue closed with label `✅ Completed`
+
+## Labels
+- `🟢 Open` — quest awaiting adventurers
+- `🟡 Claimed` — quest in progress
+- `✅ Completed` — quest completed and paid
+
+## Key Facts
+- Zero platform fees
+- No registration required — just a GitHub account to comment
+- Part of the AgentSkills ecosystem
+- Founded by citarreikee as a measurement instrument for post-employment work patterns
